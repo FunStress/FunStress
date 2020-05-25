@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>381400429750-3dkem076amq5mc368hjm8ct4vos3rhtq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.381400429750-3dkem076amq5mc368hjm8ct4vos3rhtq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBZxkilHCrLCoIERMDPJx4HC66luYNNzRo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>381400429750</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.stressbusterapp.StressBuster</string>
+	<key>PROJECT_ID</key>
+	<string>stress-buster-609dd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>stress-buster-609dd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:381400429750:ios:e2eb0995e208200e552217</string>
+	<key>DATABASE_URL</key>
+	<string>https://stress-buster-609dd.firebaseio.com</string>
+</dict>
+</plist>

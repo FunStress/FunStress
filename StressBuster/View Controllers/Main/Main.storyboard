@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0al-mG-x5f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab BarVC-->
+        <scene sceneID="pzf-dM-iau">
+            <objects>
+                <tabBarController storyboardIdentifier="homeTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0al-mG-x5f" customClass="MainTabBarVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lz0-Re-sNC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4nC-Cj-Iva" kind="relationship" relationship="viewControllers" id="PeZ-IO-3zG"/>
+                        <segue destination="BPs-SO-gwy" kind="relationship" relationship="viewControllers" id="T1Q-PL-2wa"/>
+                        <segue destination="SK5-pY-idg" kind="relationship" relationship="viewControllers" id="IAh-63-L0h"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1HT-1c-6uP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1003" y="-142"/>
+        </scene>
+        <!--Groups-->
+        <scene sceneID="6Vq-Ri-X7j">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="groupsStoryId" storyboardName="Groups" id="BPs-SO-gwy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Groups" image="groupsUnselected" selectedImage="groupsSelected" id="XK1-A5-HBi"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ds-sV-KZo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330" y="-143"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Fs8-ft-48R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="4nC-Cj-Iva" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="music.house.fill" catalog="system" id="wOa-E8-9Xl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OhY-HR-J6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-309" y="-351"/>
+        </scene>
+        <!--MyProfile-->
+        <scene sceneID="rrh-Cf-gZt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyProfile" id="SK5-pY-idg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Profile" image="profileUnselected" selectedImage="profileSelected" id="o6L-EE-qc2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iCH-xz-E7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-320" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="groupsSelected" width="25" height="25"/>
+        <image name="groupsUnselected" width="25" height="25"/>
+        <image name="music.house.fill" catalog="system" width="128" height="106"/>
+        <image name="profileSelected" width="25" height="25"/>
+        <image name="profileUnselected" width="25" height="25"/>
+    </resources>
+</document>
