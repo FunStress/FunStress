@@ -18,6 +18,8 @@ class EditGroupTVC: UITableViewController {
     @IBOutlet weak var nameTxtFld: UITextField!
     @IBOutlet weak var descriptionTxtView: UITextView!
     @IBOutlet weak var groupMembersLbl: UILabel!
+    @IBOutlet weak var saveBtn: UIButton!
+    @IBOutlet weak var deleteGrpBtn: UIButton!
     
     // MARK: - Stored Properties
     var groupDetails: Group!
@@ -32,13 +34,13 @@ class EditGroupTVC: UITableViewController {
         
         tableView.keyboardDismissMode = .onDrag
         self.avatarCollectionView.allowsMultipleSelection = false
+        self.configureUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         self.loadAvatars()
-        self.configureUI()
     }
     
     fileprivate func configureUI() {
@@ -74,6 +76,8 @@ class EditGroupTVC: UITableViewController {
                 }
             }
         }
+        self.saveBtn.setImageAndTitle()
+        self.deleteGrpBtn.setImageAndTitle()
     }
     
     private func loadAvatars() {

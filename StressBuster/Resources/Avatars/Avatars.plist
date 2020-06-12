@@ -10,15 +10,33 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Amethyst</string>
+		<key>image</key>
+		<string>Amethyst</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Angel</string>
 		<key>image</key>
 		<string>Angel</string>
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Batwoman</string>
+		<key>image</key>
+		<string>Batwoman</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Captain America</string>
 		<key>image</key>
 		<string>CaptainAmerica</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Catwoman</string>
+		<key>image</key>
+		<string>Catwoman</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -40,21 +58,57 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Donna Troy</string>
+		<key>image</key>
+		<string>DonnaTroy</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Emma Frost</string>
 		<key>image</key>
 		<string>EmmaFrost</string>
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Enchantress</string>
+		<key>image</key>
+		<string>Enchantress</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Eve Coffin</string>
+		<key>image</key>
+		<string>EveCoffin</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Gambit</string>
 		<key>image</key>
 		<string>Gambit</string>
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Harley Quinn</string>
+		<key>image</key>
+		<string>HarleyQuinn</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Hawkeye</string>
 		<key>image</key>
 		<string>Hawkeye</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hawkgirl</string>
+		<key>image</key>
+		<string>Hawkgirl</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Huntress</string>
+		<key>image</key>
+		<string>Huntress</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -67,6 +121,12 @@
 		<string>Juggernaut</string>
 		<key>image</key>
 		<string>Juggernaut</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Katana</string>
+		<key>image</key>
+		<string>Katana</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -76,15 +136,39 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Killer Frost</string>
+		<key>image</key>
+		<string>KillerFrost</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Lockheed</string>
 		<key>image</key>
 		<string>Lockheed</string>
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Lois Lane</string>
+		<key>image</key>
+		<string>LoisLane</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Magneto</string>
 		<key>image</key>
 		<string>Magneto</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mary Marvel</string>
+		<key>image</key>
+		<string>MaryMarvel</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mera</string>
+		<key>image</key>
+		<string>Mera</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -112,15 +196,33 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Pandora</string>
+		<key>image</key>
+		<string>Pandora</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Puck</string>
 		<key>image</key>
 		<string>Puck</string>
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Raven</string>
+		<key>image</key>
+		<string>Raven</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Red Skull</string>
 		<key>image</key>
 		<string>RedSkull</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Renee Montoya</string>
+		<key>image</key>
+		<string>ReneeMontoya</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -142,15 +244,45 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Starfire</string>
+		<key>image</key>
+		<string>Starfire</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Stargirl</string>
+		<key>image</key>
+		<string>Stargirl</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Thing</string>
 		<key>image</key>
 		<string>Thing</string>
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Vixen</string>
+		<key>image</key>
+		<string>Vixen</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Wolverine</string>
 		<key>image</key>
 		<string>Wolverine</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Wonder Woman</string>
+		<key>image</key>
+		<string>WonderWoman</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Zatanna</string>
+		<key>image</key>
+		<string>Zatanna</string>
 	</dict>
 </array>
 </plist>

@@ -19,7 +19,8 @@ class SearchMusicVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var warningLbl: UILabel!
-
+    @IBOutlet weak var sendBtn: UIButton!
+    
     // MARK: - Delegate
     weak var delegate: SendMusicDelegate?
     
@@ -64,6 +65,7 @@ class SearchMusicVC: UIViewController {
         labelInsideUISearchBar?.textColor = UIColor.lightGray
         
         self.reloadData()
+        self.sendBtn.setImageAndTitle()
     }
     
     fileprivate func reloadData() {

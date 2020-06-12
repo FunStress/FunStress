@@ -73,7 +73,7 @@ extension SendFriendRequestsVC: UITableViewDelegate, UITableViewDataSource {
             cell.configureCell(contact)
             
             cell.addBtnPressed = { (selected) in
-                var phoneNumber = contact.phoneNumber
+                var phoneNumber = contact.phoneNumber ?? ""
                 print(phoneNumber)
                 // MARK: - Add +1 if the phone number doesn't have
                 if (!phoneNumber.contains("+1")) {
@@ -115,7 +115,7 @@ extension SendFriendRequestsVC: UISearchBarDelegate {
         if (searchText != "") {
             isSearching = true
             searchBar.showsCancelButton = true
-            self.filteredContacts = self.contacts.filter{ ($0.fullName.contains(searchText)) }
+            self.filteredContacts = self.contacts.filter{ $0.firstName.contains(searchText) }
         } else {
             isSearching = false
             searchBar.showsCancelButton = false
@@ -127,7 +127,7 @@ extension SendFriendRequestsVC: UISearchBarDelegate {
         if let searchText = searchBar.text, searchText != "" {
             isSearching = true
             searchBar.showsCancelButton = true
-            self.filteredContacts = self.contacts.filter{ ($0.fullName.contains(searchText)) }
+            self.filteredContacts = self.contacts.filter{ $0.firstName.contains(searchText) }
         } else {
             isSearching = false
             searchBar.showsCancelButton = false

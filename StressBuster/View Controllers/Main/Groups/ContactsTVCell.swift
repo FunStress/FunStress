@@ -13,6 +13,7 @@ class ContactsTVCell: UITableViewCell {
     // MARK: - Outlets
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var phoneNumberLbl: UILabel!
+    @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var addBtn: UIButton!
     
     var contact: PhoneContact!
@@ -20,7 +21,10 @@ class ContactsTVCell: UITableViewCell {
     
     func configureCell(_ contact: PhoneContact) {
         self.contact = contact
-        self.nameLbl.text = contact.fullName
+        if let imgData = contact.image {
+            self.imgView.image = UIImage(data: imgData)
+        }
+        self.nameLbl.text = "\(contact.firstName) \(contact.lastName)"
         self.phoneNumberLbl.text = contact.phoneNumber
     }
     

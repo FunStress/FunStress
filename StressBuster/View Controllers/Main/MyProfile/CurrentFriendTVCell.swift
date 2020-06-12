@@ -20,6 +20,7 @@ class CurrentFriendTVCell: UITableViewCell {
     func configureCell(_ profile: Profile) {
         self.profile = profile
         self.nameLbl.text = "\(profile.firstName ?? "") \(profile.lastName ?? "")"
+        self.unfriendBtn.setImageAndTitle()
     }
     
     @IBAction func unfriendBtnPressed(_ sender: UIButton) {

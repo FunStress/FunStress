@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		371697CCBF4EA2160E4E5425 /* Pods_StressBuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C7D1FB7D31B854A1328FDD /* Pods_StressBuster.framework */; };
+		8B4F81AC15950653EB0979AE /* Pods_StressBuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1EE21E78036B443D4A72CC /* Pods_StressBuster.framework */; };
 		BC00EB9F23BB3F8D00C2232B /* ContactsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00EB9E23BB3F8D00C2232B /* ContactsHelper.swift */; };
 		BC033F6F23B9288F00F9534F /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC033F6E23B9288F00F9534F /* CDManager.swift */; };
 		BC033F7323BB0E0F00F9534F /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC033F7223BB0E0F00F9534F /* UIImageView+Extensions.swift */; };
@@ -15,6 +15,7 @@
 		BC071747244663150092CADC /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC071746244663150092CADC /* String+Extensions.swift */; };
 		BC07174924479EEE0092CADC /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07174824479EED0092CADC /* Date+Extensions.swift */; };
 		BC1CD83E246D1D6A00410E28 /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1CD83D246D1D6A00410E28 /* Emitter.swift */; };
+		BC1E3B022491DFC400DB66BF /* Button+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E3B012491DFC400DB66BF /* Button+Extensions.swift */; };
 		BC20E53B2444017F00C0E4F6 /* GroupTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20E53A2444017F00C0E4F6 /* GroupTVCell.swift */; };
 		BC22D77523F883F200E8ED1F /* UnfriendAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC22D77423F883F200E8ED1F /* UnfriendAlertVC.swift */; };
 		BC2852A6244FF42600CB9742 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2852A5244FF42500CB9742 /* MessageCell.swift */; };
@@ -32,6 +33,7 @@
 		BC7B01B0244C107B003AF516 /* UserProfile+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B01AE244C107A003AF516 /* UserProfile+CoreDataClass copy.swift */; };
 		BC7B01B1244C107B003AF516 /* UserProfile+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B01AF244C107B003AF516 /* UserProfile+CoreDataProperties copy.swift */; };
 		BC85117424454F9A00B80A9C /* MusicTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85117324454F9A00B80A9C /* MusicTVCell.swift */; };
+		BC8620E7248B38970045C52B /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8620E6248B38970045C52B /* HelpVC.swift */; };
 		BC985A13244B3B32001493B6 /* AddFriendsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC985A12244B3B32001493B6 /* AddFriendsTVCell.swift */; };
 		BC985A15244B3B56001493B6 /* AddFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC985A14244B3B56001493B6 /* AddFriendsVC.swift */; };
 		BC9C93052445612E0083F25B /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C93042445612E0083F25B /* MusicService.swift */; };
@@ -105,7 +107,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C9DF3712AD15DFDDCB9D969 /* Pods-StressBuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.release.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.release.xcconfig"; sourceTree = "<group>"; };
+		AEC0A28DA2A0A10576825E08 /* Pods-StressBuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.release.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.release.xcconfig"; sourceTree = "<group>"; };
+		B1773F96A85E2506468BEE15 /* Pods-StressBuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.debug.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.debug.xcconfig"; sourceTree = "<group>"; };
 		BC00EB9E23BB3F8D00C2232B /* ContactsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsHelper.swift; sourceTree = "<group>"; };
 		BC033F6E23B9288F00F9534F /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
 		BC033F7223BB0E0F00F9534F /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 		BC071746244663150092CADC /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		BC07174824479EED0092CADC /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		BC1CD83D246D1D6A00410E28 /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
+		BC1E3B012491DFC400DB66BF /* Button+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extensions.swift"; sourceTree = "<group>"; };
 		BC20E53A2444017F00C0E4F6 /* GroupTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTVCell.swift; sourceTree = "<group>"; };
 		BC22D77423F883F200E8ED1F /* UnfriendAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfriendAlertVC.swift; sourceTree = "<group>"; };
 		BC2852A5244FF42500CB9742 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		BC7B01AE244C107A003AF516 /* UserProfile+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserProfile+CoreDataClass copy.swift"; sourceTree = "<group>"; };
 		BC7B01AF244C107B003AF516 /* UserProfile+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserProfile+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
 		BC85117324454F9A00B80A9C /* MusicTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTVCell.swift; sourceTree = "<group>"; };
+		BC8620E6248B38970045C52B /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		BC985A12244B3B32001493B6 /* AddFriendsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsTVCell.swift; sourceTree = "<group>"; };
 		BC985A14244B3B56001493B6 /* AddFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsVC.swift; sourceTree = "<group>"; };
 		BC9C93042445612E0083F25B /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
@@ -204,8 +209,7 @@
 		BCEFA390244C025900B85985 /* CurrentFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFriendsVC.swift; sourceTree = "<group>"; };
 		BCEFA392244C0A4B00B85985 /* CurrentFriendTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFriendTVCell.swift; sourceTree = "<group>"; };
 		BCF1FA422452A57600F289D7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		C9C7D1FB7D31B854A1328FDD /* Pods_StressBuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StressBuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCE609FC1CF59E13EDA305C3 /* Pods-StressBuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.debug.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.debug.xcconfig"; sourceTree = "<group>"; };
+		EF1EE21E78036B443D4A72CC /* Pods_StressBuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StressBuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC4EDE3723ACF63700E673C5 /* MapKit.framework in Frameworks */,
-				371697CCBF4EA2160E4E5425 /* Pods_StressBuster.framework in Frameworks */,
+				8B4F81AC15950653EB0979AE /* Pods_StressBuster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,8 +228,8 @@
 		0B9200E556E9DBB2D846240F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CCE609FC1CF59E13EDA305C3 /* Pods-StressBuster.debug.xcconfig */,
-				6C9DF3712AD15DFDDCB9D969 /* Pods-StressBuster.release.xcconfig */,
+				B1773F96A85E2506468BEE15 /* Pods-StressBuster.debug.xcconfig */,
+				AEC0A28DA2A0A10576825E08 /* Pods-StressBuster.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -235,7 +239,7 @@
 			children = (
 				BC4EDE3623ACF63700E673C5 /* MapKit.framework */,
 				BC4EDE2623ABA89300E673C5 /* FlagPhoneNumber.bundle */,
-				C9C7D1FB7D31B854A1328FDD /* Pods_StressBuster.framework */,
+				EF1EE21E78036B443D4A72CC /* Pods_StressBuster.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -255,6 +259,7 @@
 				BC033F7223BB0E0F00F9534F /* UIImageView+Extensions.swift */,
 				BC071746244663150092CADC /* String+Extensions.swift */,
 				BC07174824479EED0092CADC /* Date+Extensions.swift */,
+				BC1E3B012491DFC400DB66BF /* Button+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -445,6 +450,7 @@
 				BCF1FA422452A57600F289D7 /* HomeVC.swift */,
 				BC1CD83D246D1D6A00410E28 /* Emitter.swift */,
 				BC44BE89245987AA00727651 /* EmojiCVCell.swift */,
+				BC8620E6248B38970045C52B /* HelpVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -583,11 +589,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCBCEE2D23A6566D0013E66B /* Build configuration list for PBXNativeTarget "StressBuster" */;
 			buildPhases = (
-				3EC4FA6E8F7BC2C681EBDF80 /* [CP] Check Pods Manifest.lock */,
+				7CF4F0B14F8FBFC871E6F629 /* [CP] Check Pods Manifest.lock */,
 				BCBCEE1223A6566C0013E66B /* Sources */,
 				BCBCEE1323A6566C0013E66B /* Frameworks */,
 				BCBCEE1423A6566C0013E66B /* Resources */,
-				84557F71D3C04B2DCBA4153A /* [CP] Embed Pods Frameworks */,
+				76B882A69E59C6FA074D648E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -672,7 +678,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3EC4FA6E8F7BC2C681EBDF80 /* [CP] Check Pods Manifest.lock */ = {
+		76B882A69E59C6FA074D648E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CF4F0B14F8FBFC871E6F629 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -694,23 +717,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		84557F71D3C04B2DCBA4153A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -727,6 +733,7 @@
 				BCECB54F23B5525E002BC808 /* AppConfig.swift in Sources */,
 				BCA18FA92442A89C003B689C /* LoginRegisterVC.swift in Sources */,
 				BC22D77523F883F200E8ED1F /* UnfriendAlertVC.swift in Sources */,
+				BC8620E7248B38970045C52B /* HelpVC.swift in Sources */,
 				BCBF0C712441F37200F4B88E /* MainTabBarVC.swift in Sources */,
 				BC4EDE2C23ABAE5200E673C5 /* CountryCodeHelper.swift in Sources */,
 				BC387F962453054C006B920F /* AddMembersToGroup.swift in Sources */,
@@ -748,6 +755,7 @@
 				BCBF0C812441F42E00F4B88E /* NewGroupTVC.swift in Sources */,
 				BC85117424454F9A00B80A9C /* MusicTVCell.swift in Sources */,
 				BC1CD83E246D1D6A00410E28 /* Emitter.swift in Sources */,
+				BC1E3B022491DFC400DB66BF /* Button+Extensions.swift in Sources */,
 				BC4EDE3A23ACFB3F00E673C5 /* FirebaseAuth.swift in Sources */,
 				BCBF0C7B2441F3E800F4B88E /* AlertGroupVC.swift in Sources */,
 				BC4EDE1623A7C9E900E673C5 /* UIViewController+Extensions.swift in Sources */,
@@ -914,13 +922,13 @@
 		};
 		BCBCEE2E23A6566D0013E66B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCE609FC1CF59E13EDA305C3 /* Pods-StressBuster.debug.xcconfig */;
+			baseConfigurationReference = B1773F96A85E2506468BEE15 /* Pods-StressBuster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "StressBuster/Stress Buster.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 6RNV8J8H5H;
 				INFOPLIST_FILE = StressBuster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -928,7 +936,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.9;
+				MARKETING_VERSION = 1.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stressbusterapp.StressBuster;
 				PRODUCT_NAME = "Fun Stress";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -939,13 +947,13 @@
 		};
 		BCBCEE2F23A6566D0013E66B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C9DF3712AD15DFDDCB9D969 /* Pods-StressBuster.release.xcconfig */;
+			baseConfigurationReference = AEC0A28DA2A0A10576825E08 /* Pods-StressBuster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "StressBuster/Stress Buster.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 6RNV8J8H5H;
 				INFOPLIST_FILE = StressBuster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -953,7 +961,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.9;
+				MARKETING_VERSION = 1.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stressbusterapp.StressBuster;
 				PRODUCT_NAME = "Fun Stress";
 				PROVISIONING_PROFILE_SPECIFIER = "";

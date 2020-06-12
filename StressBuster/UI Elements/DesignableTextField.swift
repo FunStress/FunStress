@@ -33,4 +33,34 @@ class DesignableTextField: UITextField {
     override open func editingRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }
+    
+    @IBInspectable
+    var shadowColor: UIColor? {
+        get {
+            return UIColor(cgColor: self.layer.shadowColor!)
+        }
+        set {
+            self.layer.shadowColor = newValue?.cgColor
+        }
+    }
+    
+    @IBInspectable
+    var shadowOpacity: Float {
+        get {
+            return self.layer.shadowOpacity
+        }
+        set {
+            self.layer.shadowOpacity = newValue
+        }
+    }
+    
+    @IBInspectable
+    var shadowOffset: CGSize {
+        get {
+            return self.layer.shadowOffset
+        }
+        set {
+            self.layer.shadowOffset = newValue
+        }
+    }
 }

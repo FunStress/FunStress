@@ -13,11 +13,14 @@ let PROFILE_EDIT_SEGUE = "toProfielEditSegue"
 class MyProfileTVC: UITableViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var fullNameLbl: UILabel!
+    @IBOutlet weak var firstNameLbl: UILabel!
+    @IBOutlet weak var lastNameLbl: UILabel!
     @IBOutlet weak var phoneNumberLbl: UILabel!
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var avatarImgView: UIImageView!
-
+    @IBOutlet weak var logoutBtn: UIButton!
+    @IBOutlet weak var deleteAccountBtn: UIButton!
+    
     // MARK: - Stored Properties
     var userData: User!
     
@@ -38,7 +41,8 @@ class MyProfileTVC: UITableViewController {
             if let userDetails = user {
                 self.userData = userDetails
                 
-                self.fullNameLbl.text = "\(userDetails.firstName ?? "") \(userDetails.lastName ?? "")"
+                self.firstNameLbl.text = userDetails.firstName ?? ""
+                self.lastNameLbl.text = userDetails.lastName ?? ""
                 self.phoneNumberLbl.text = userDetails.phoneNumber ?? ""
                 self.emailLbl.text = userDetails.email ?? ""
                 
@@ -50,6 +54,8 @@ class MyProfileTVC: UITableViewController {
                 }
             }
         }
+        self.logoutBtn.setImageAndTitle()
+        self.deleteAccountBtn.setImageAndTitle()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

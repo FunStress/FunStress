@@ -12,7 +12,7 @@ let LOGIN_SEGUE = "logInSegue"
 let REGISTER_NOW_SEGUE = "registerNowSegue"
 
 class WelcomeVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

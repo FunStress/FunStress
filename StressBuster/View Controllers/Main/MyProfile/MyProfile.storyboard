@@ -17,7 +17,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--My Profile-->
+        <!--Profile-->
         <scene sceneID="6eX-3v-H87">
             <objects>
                 <tableViewController id="q2y-2E-wqd" customClass="MyProfileTVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,7 +56,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Full Name" id="1qa-1z-wRg">
+                            <tableViewSection headerTitle="First Name" id="1qa-1z-wRg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="HR1-VJ-71s">
                                         <rect key="frame" x="0.0" y="211.5" width="414" height="50"/>
@@ -82,16 +82,16 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Phone Number" id="lRc-Jl-Zy9">
+                            <tableViewSection headerTitle="Last Name" id="HzS-Nb-tYA">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="NDS-6r-4mB">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="nfK-Ut-7wr">
                                         <rect key="frame" x="0.0" y="317.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NDS-6r-4mB" id="hk9-Tz-CBh">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nfK-Ut-7wr" id="5Pa-mr-Z7V">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YW-R0-207">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnM-V4-Add">
                                                     <rect key="frame" x="20" y="0.0" width="359" height="50"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -99,10 +99,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="3YW-R0-207" secondAttribute="trailing" constant="15" id="7jh-hF-3JT"/>
-                                                <constraint firstItem="3YW-R0-207" firstAttribute="top" secondItem="hk9-Tz-CBh" secondAttribute="top" id="CaD-Xw-5vv"/>
-                                                <constraint firstItem="3YW-R0-207" firstAttribute="leading" secondItem="hk9-Tz-CBh" secondAttribute="leadingMargin" id="Qzv-Qz-7R2"/>
-                                                <constraint firstAttribute="bottom" secondItem="3YW-R0-207" secondAttribute="bottom" id="cbv-Vq-iDY"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZnM-V4-Add" secondAttribute="bottom" id="JtA-DR-1Zz"/>
+                                                <constraint firstItem="ZnM-V4-Add" firstAttribute="leading" secondItem="5Pa-mr-Z7V" secondAttribute="leadingMargin" id="NQq-m8-BFP"/>
+                                                <constraint firstItem="ZnM-V4-Add" firstAttribute="top" secondItem="5Pa-mr-Z7V" secondAttribute="top" id="X2k-kV-Ij3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZnM-V4-Add" secondAttribute="trailing" constant="15" id="Y3s-bO-rB6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -134,10 +134,36 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Phone Number" id="lRc-Jl-Zy9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="NDS-6r-4mB">
+                                        <rect key="frame" x="0.0" y="529.5" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NDS-6r-4mB" id="hk9-Tz-CBh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YW-R0-207">
+                                                    <rect key="frame" x="20" y="0.0" width="359" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3YW-R0-207" secondAttribute="trailing" constant="15" id="7jh-hF-3JT"/>
+                                                <constraint firstItem="3YW-R0-207" firstAttribute="top" secondItem="hk9-Tz-CBh" secondAttribute="top" id="CaD-Xw-5vv"/>
+                                                <constraint firstItem="3YW-R0-207" firstAttribute="leading" secondItem="hk9-Tz-CBh" secondAttribute="leadingMargin" id="Qzv-Qz-7R2"/>
+                                                <constraint firstAttribute="bottom" secondItem="3YW-R0-207" secondAttribute="bottom" id="cbv-Vq-iDY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="Friends" id="tNb-ek-zae">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="vbX-du-k8L" rowHeight="50" style="IBUITableViewCellStyleDefault" id="rsq-KD-6Yx">
-                                        <rect key="frame" x="0.0" y="529.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="635.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rsq-KD-6Yx" id="d3o-f7-tLl">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
@@ -158,30 +184,24 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="bRK-nA-Cdc">
-                                <cells/>
-                            </tableViewSection>
-                            <tableViewSection id="Ge8-hI-MV5">
-                                <cells/>
-                            </tableViewSection>
                             <tableViewSection id="9kR-mI-Vuf">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="6No-y2-L1c">
-                                        <rect key="frame" x="0.0" y="687.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="721.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6No-y2-L1c" id="eJ1-c9-TIF">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsI-Mb-iwh" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
-                                                    <rect key="frame" x="144.5" y="0.0" width="125" height="50"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CsI-Mb-iwh" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="132" y="0.0" width="150" height="50"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="125" id="XfZ-5u-cfH"/>
+                                                        <constraint firstAttribute="width" constant="150" id="XfZ-5u-cfH"/>
                                                         <constraint firstAttribute="height" constant="50" id="xZX-8X-uX9"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
-                                                    <state key="normal" title="Logout">
+                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                    <state key="normal" title="Logout" image="logout">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -205,21 +225,21 @@
                             <tableViewSection id="j2w-r4-A9R">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="7kH-4u-k4Z">
-                                        <rect key="frame" x="0.0" y="773.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="807.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7kH-4u-k4Z" id="yhq-I9-MFp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGQ-ex-J8c" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
-                                                    <rect key="frame" x="119.5" y="0.0" width="175" height="50"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGQ-ex-J8c" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="107" y="0.0" width="200" height="50"/>
                                                     <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="23A-fB-r6O"/>
-                                                        <constraint firstAttribute="width" constant="175" id="yFQ-vX-kgr"/>
+                                                        <constraint firstAttribute="width" constant="200" id="yFQ-vX-kgr"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
-                                                    <state key="normal" title="Delete Account">
+                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                    <state key="normal" title="Delete Account" image="remove">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -246,7 +266,7 @@
                             <outlet property="delegate" destination="q2y-2E-wqd" id="SEM-ya-0CO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Profile" largeTitleDisplayMode="never" id="ZPy-g8-HVy">
+                    <navigationItem key="navigationItem" title="Profile" largeTitleDisplayMode="never" id="ZPy-g8-HVy">
                         <barButtonItem key="rightBarButtonItem" image="edit" id="WO4-kb-Kc4">
                             <connections>
                                 <segue destination="ytH-ne-Ige" kind="show" identifier="toProfielEditSegue" id="Kg0-Hq-xA8"/>
@@ -255,8 +275,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="avatarImgView" destination="5Qh-1l-FIo" id="e9R-Gn-dD7"/>
+                        <outlet property="deleteAccountBtn" destination="eGQ-ex-J8c" id="9k6-p9-P83"/>
                         <outlet property="emailLbl" destination="eoT-U3-NdD" id="lYW-hu-hBm"/>
-                        <outlet property="fullNameLbl" destination="5dS-EE-fHZ" id="YaJ-hj-G9c"/>
+                        <outlet property="firstNameLbl" destination="5dS-EE-fHZ" id="UfA-dF-aC6"/>
+                        <outlet property="lastNameLbl" destination="ZnM-V4-Add" id="QjE-ps-JkI"/>
+                        <outlet property="logoutBtn" destination="CsI-Mb-iwh" id="kuC-tF-4T3"/>
                         <outlet property="phoneNumberLbl" destination="3YW-R0-207" id="QzZ-4q-m43"/>
                     </connections>
                 </tableViewController>
@@ -264,11 +287,11 @@
             </objects>
             <point key="canvasLocation" x="746" y="708"/>
         </scene>
-        <!--My Profile-->
+        <!--Profile-->
         <scene sceneID="dWt-UF-b64">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="URj-Qn-R12" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Profile" image="profileUnselected" selectedImage="profileSelected" id="Gai-DB-sSt"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profileUnselected" selectedImage="profileSelected" id="Gai-DB-sSt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qZJ-ti-ggR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -382,16 +405,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MiO-Mc-Afh" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="50"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MiO-Mc-Afh" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="374" height="40"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MiO-Mc-Afh" firstAttribute="leading" secondItem="uLP-xU-FLX" secondAttribute="leadingMargin" id="8T8-vW-gv6"/>
-                                                <constraint firstItem="MiO-Mc-Afh" firstAttribute="top" secondItem="uLP-xU-FLX" secondAttribute="top" id="KqY-Kf-Lrf"/>
-                                                <constraint firstAttribute="bottom" secondItem="MiO-Mc-Afh" secondAttribute="bottom" id="kTi-Dj-W4n"/>
+                                                <constraint firstItem="MiO-Mc-Afh" firstAttribute="top" secondItem="uLP-xU-FLX" secondAttribute="top" constant="5" id="KqY-Kf-Lrf"/>
+                                                <constraint firstAttribute="bottom" secondItem="MiO-Mc-Afh" secondAttribute="bottom" constant="5" id="kTi-Dj-W4n"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="MiO-Mc-Afh" secondAttribute="trailing" id="rcb-Cp-Dxl"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -407,17 +445,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cs2-1a-CG3" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="50"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cs2-1a-CG3" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="374" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="cs2-1a-CG3" firstAttribute="leading" secondItem="HoG-yg-CTt" secondAttribute="leadingMargin" id="Est-kr-eOB"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="cs2-1a-CG3" secondAttribute="trailing" id="X71-L3-hGn"/>
-                                                <constraint firstItem="cs2-1a-CG3" firstAttribute="top" secondItem="HoG-yg-CTt" secondAttribute="top" id="b4n-P9-M8Z"/>
-                                                <constraint firstAttribute="bottom" secondItem="cs2-1a-CG3" secondAttribute="bottom" id="tn4-uu-qb7"/>
+                                                <constraint firstItem="cs2-1a-CG3" firstAttribute="top" secondItem="HoG-yg-CTt" secondAttribute="top" constant="5" id="b4n-P9-M8Z"/>
+                                                <constraint firstAttribute="bottom" secondItem="cs2-1a-CG3" secondAttribute="bottom" constant="5" id="tn4-uu-qb7"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -432,17 +485,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oOW-wJ-lnD" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="50"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oOW-wJ-lnD" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="374" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="oOW-wJ-lnD" secondAttribute="bottom" id="CUL-fM-CjO"/>
+                                                <constraint firstAttribute="bottom" secondItem="oOW-wJ-lnD" secondAttribute="bottom" constant="5" id="CUL-fM-CjO"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="oOW-wJ-lnD" secondAttribute="trailing" id="Ei7-Jc-vvz"/>
                                                 <constraint firstItem="oOW-wJ-lnD" firstAttribute="leading" secondItem="lWM-es-CXq" secondAttribute="leadingMargin" id="qfq-zf-Lzd"/>
-                                                <constraint firstItem="oOW-wJ-lnD" firstAttribute="top" secondItem="lWM-es-CXq" secondAttribute="top" id="rzQ-bi-L74"/>
+                                                <constraint firstItem="oOW-wJ-lnD" firstAttribute="top" secondItem="lWM-es-CXq" secondAttribute="top" constant="5" id="rzQ-bi-L74"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -483,15 +551,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPs-yx-SNX" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
-                                                    <rect key="frame" x="144.5" y="0.0" width="125" height="50"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPs-yx-SNX" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="132" y="0.0" width="150" height="50"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="125" id="XJl-r0-vIK"/>
+                                                        <constraint firstAttribute="width" constant="150" id="XJl-r0-vIK"/>
                                                         <constraint firstAttribute="height" constant="50" id="xnt-g2-ZAL"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
-                                                    <state key="normal" title="Save">
+                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                    <state key="normal" title="Save" image="checkmark">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -525,11 +593,12 @@
                         <outlet property="firstNameTxtFld" destination="MiO-Mc-Afh" id="4ON-RI-d6w"/>
                         <outlet property="lastNameTxtFld" destination="cs2-1a-CG3" id="NjE-vq-1ji"/>
                         <outlet property="phoneNumberLbl" destination="B8O-1y-zCP" id="iay-8j-mZK"/>
+                        <outlet property="saveBtn" destination="GPs-yx-SNX" id="a8f-kA-ILg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESa-u6-Tvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705.7971014492755" y="707.8125"/>
+            <point key="canvasLocation" x="1597" y="708"/>
         </scene>
         <!--All Friends-->
         <scene sceneID="2W9-KQ-ATp">
@@ -545,7 +614,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="usq-ky-Kfz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="usq-ky-Kfz">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -557,20 +626,20 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FullName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgp-iS-08f">
-                                                    <rect key="frame" x="20" y="16" width="254" height="43"/>
+                                                    <rect key="frame" x="20" y="16" width="204" height="43"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe6-4L-hrT" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
-                                                    <rect key="frame" x="294" y="15" width="100" height="45"/>
+                                                    <rect key="frame" x="244" y="15" width="150" height="45"/>
                                                     <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="KgB-3N-iJO"/>
-                                                        <constraint firstAttribute="width" constant="100" id="h98-Hh-CR0"/>
+                                                        <constraint firstAttribute="width" constant="150" id="h98-Hh-CR0"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
-                                                    <state key="normal" title="Unfriend">
+                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                    <state key="normal" title="Unfriend" image="remove">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -635,9 +704,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark" width="22" height="22"/>
         <image name="edit" width="25" height="25"/>
+        <image name="logout" width="22" height="22"/>
         <image name="profile" width="100" height="100"/>
         <image name="profileSelected" width="25" height="25"/>
         <image name="profileUnselected" width="25" height="25"/>
+        <image name="remove" width="22" height="22"/>
     </resources>
 </document>

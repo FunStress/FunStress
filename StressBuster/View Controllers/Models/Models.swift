@@ -47,8 +47,10 @@ struct Profile {
 
 // MARK:  - Contact Models
 struct PhoneContact {
-    let fullName: String
+    let firstName: String
+    let lastName: String
     let phoneNumber: String
+    let image: Data?
 }
 
 // MARK: - Group Models

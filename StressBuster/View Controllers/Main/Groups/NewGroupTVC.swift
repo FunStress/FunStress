@@ -18,31 +18,39 @@ class NewGroupTVC: UITableViewController {
     @IBOutlet weak var nameTxtFld: UITextField!
     @IBOutlet weak var descriptionTxtView: UITextView!
     @IBOutlet weak var friendsDetailsLbl: UILabel!
+    @IBOutlet weak var saveBtn: UIButton!
     
     // MARK: - Stored Properties
     var avatars = [NSDictionary]()
     var selectedAvatarName = ""
+    var selectedAvatarIndex = -1
     var addedFrndsToGrp = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.keyboardDismissMode = .onDrag        
+        tableView.keyboardDismissMode = .onDrag
+        self.configureUI()
+        self.loadAvatars()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.configureUI()
-        self.loadAvatars()
+        if (self.selectedAvatarIndex != -1) {
+            let selectedAvatar = self.avatars[self.selectedAvatarIndex]
+            self.selectedAvatarName = selectedAvatar["name"] as? String ?? ""
+            self.avatarCollectionView.scrollToItem(at: IndexPath(item: self.selectedAvatarIndex, section: 0), at: .left, animated: false)
+        }
+        
+        let friendsDetailsTxt = (self.addedFrndsToGrp.count > 1) ? "\(self.addedFrndsToGrp.count) friends added" : "\(self.addedFrndsToGrp.count) friend added"
+        self.friendsDetailsLbl.text = friendsDetailsTxt
     }
     
     fileprivate func configureUI() {
         descriptionTxtView.text = "Describe the group..."
         descriptionTxtView.textColor = #colorLiteral(red: 0.7803921569, green: 0.7803921569, blue: 0.8039215686, alpha: 1)
-        
-        let friendsDetailsTxt = (self.addedFrndsToGrp.count > 1) ? "\(self.addedFrndsToGrp.count) friends added" : "\(self.addedFrndsToGrp.count) friend added"
-        self.friendsDetailsLbl.text = friendsDetailsTxt
+        self.saveBtn.setImageAndTitle()
     }
     
     private func loadAvatars() {
@@ -149,6 +157,12 @@ extension NewGroupTVC: UICollectionViewDelegate, UICollectionViewDataSource, UIC
             
             let avatar = self.avatars[indexPath.row]
             cell.configureAvatar(avatar)
+            
+            if (self.selectedAvatarIndex == indexPath.row) {
+                cell.isSelected = true
+            } else {
+                cell.isSelected = false
+            }
             
             return cell
         } else {

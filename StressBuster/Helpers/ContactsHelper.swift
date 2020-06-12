@@ -54,22 +54,22 @@ public final class ContactsHelper {
                 if let fullMobNum  = contactNum.value as? CNPhoneNumber {
                     if let mccName = fullMobNum.value(forKey: "digits") as? String {
                         if (contact.givenName != "") {
-                            results.append(PhoneContact(fullName: contact.givenName, phoneNumber: mccName))
+                            results.append(PhoneContact(firstName: contact.givenName, lastName: contact.familyName, phoneNumber: mccName, image: contact.thumbnailImageData))
                         }
                     }
                 }
             }
         }
         
-        return results.sorted { $0.fullName < $1.fullName }
+        return results.sorted { $0.firstName < $1.firstName }
     }
     
     func getContactName(contactNumber: String) -> String? {
         let contacts = self.getContacts()
         
         for contact in contacts {
-            if (contact.phoneNumber.contains(contactNumber) || contact.phoneNumber == contactNumber) {
-                return contact.fullName
+            if (contact.phoneNumber == contactNumber) {
+                return "\(contact.firstName) \(contact.lastName)"
             }
         }
         

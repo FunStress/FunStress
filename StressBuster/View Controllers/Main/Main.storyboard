@@ -50,7 +50,7 @@
         <scene sceneID="rrh-Cf-gZt">
             <objects>
                 <viewControllerPlaceholder storyboardName="MyProfile" id="SK5-pY-idg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Profile" image="profileUnselected" selectedImage="profileSelected" id="o6L-EE-qc2"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profileUnselected" selectedImage="profileSelected" id="o6L-EE-qc2"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCH-xz-E7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

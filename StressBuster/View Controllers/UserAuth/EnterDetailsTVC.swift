@@ -14,6 +14,7 @@ class EnterDetailsTVC: UITableViewController {
     @IBOutlet weak var firstNameTxtFld: UITextField!
     @IBOutlet weak var lastNameTxtFld: UITextField!
     @IBOutlet weak var emailTxtField: UITextField!
+    @IBOutlet weak var saveBtn: UIButton!
     @IBOutlet weak var avatarCollectionView: UICollectionView!
     
     // MARK: - Stored Properties
@@ -31,6 +32,7 @@ class EnterDetailsTVC: UITableViewController {
         
         self.firstNameTxtFld.becomeFirstResponder()
         self.loadAvatars()
+        self.saveBtn.setImageAndTitle()
     }
     
     private func loadAvatars() {

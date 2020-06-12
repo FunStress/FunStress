@@ -16,6 +16,7 @@ class LoginRegisterVC: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var phoneNumberTxtFld: UITextField!
     @IBOutlet weak var countryCodeBtn: UIButton!
+    @IBOutlet weak var nextBtn: UIButton!
     
     // MAKR: - Stored Properties
     var isLogin = false
@@ -43,6 +44,7 @@ class LoginRegisterVC: UIViewController {
         } else {
             self.title = "Register"
         }
+        self.nextBtn.setImageAndTitle()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

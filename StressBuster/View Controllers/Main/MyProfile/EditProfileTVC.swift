@@ -16,6 +16,7 @@ class EditProfileTVC: UITableViewController {
     @IBOutlet weak var emailTxtFld: UITextField!
     @IBOutlet weak var phoneNumberLbl: UILabel!
     @IBOutlet weak var avatarCollectionView: UICollectionView!
+    @IBOutlet weak var saveBtn: UIButton!
     
     // MARK: - Stored Properties
     var avatars = [NSDictionary]()
@@ -56,6 +57,8 @@ class EditProfileTVC: UITableViewController {
                 }
             }
         }
+        
+        self.saveBtn.setImageAndTitle()
     }
     
     private func loadAvatars() {

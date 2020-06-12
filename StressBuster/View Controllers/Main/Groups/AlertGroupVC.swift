@@ -14,12 +14,15 @@ protocol AlertGroupDelegate: class {
 
 class AlertGroupVC: UIViewController {
     
+    @IBOutlet weak var alertGrpBtn: UIButton!
+    
     // MARK: - Delegate
     weak var delegate: AlertGroupDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.alertGrpBtn.setImageAndTitle()
     }
     
     @IBAction func alertGrpBtnPressed(_ sender: UIButton) {

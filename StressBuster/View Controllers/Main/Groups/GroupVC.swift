@@ -173,7 +173,7 @@ class GroupVC: UIViewController {
     func scrollToBottom(){
         DispatchQueue.main.async {
             if (self.allMessages.count > 0) {
-                self.tableView.scrollToRow(at: IndexPath(row: self.tableView.numberOfRows(inSection: 0) - 1, section: 0), at: .top, animated: true)
+                self.tableView.scrollToRow(at: IndexPath(item:self.allMessages.count-1, section: 0), at: .bottom, animated: true)
             }
         }
     }

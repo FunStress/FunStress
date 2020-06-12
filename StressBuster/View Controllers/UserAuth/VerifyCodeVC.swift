@@ -16,6 +16,7 @@ class VerifyCodeVC: UIViewController {
     @IBOutlet weak var disclaimerLbl: UILabel!
     @IBOutlet weak var codeTxtFld: UITextField!
     @IBOutlet weak var resendOTPBtn: UIButton!
+    @IBOutlet weak var nextBtn: UIButton!
     
     // MARK: - Stored Properties
     var isLogin = false
@@ -50,6 +51,7 @@ class VerifyCodeVC: UIViewController {
         self.resendOTPBtn.setAttributedTitle(mutableTitleString, for: .normal)
         
         self.codeTxtFld.becomeFirstResponder()
+        self.nextBtn.setImageAndTitle()
     }
     
     @IBAction func nextBtnPressed(_ sender: UIButton) {
