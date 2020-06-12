@@ -988,24 +988,39 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Name" id="slt-UZ-qlV">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="staticNameCell" rowHeight="50" id="Qd7-q2-jFe" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="261.5" width="414" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="staticNameCell" rowHeight="60" id="Qd7-q2-jFe" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="261.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qd7-q2-jFe" id="spj-Mt-GHA">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGT-Mq-Bdu">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="50"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGT-Mq-Bdu" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="374" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="yGT-Mq-Bdu" firstAttribute="leading" secondItem="spj-Mt-GHA" secondAttribute="leadingMargin" id="9X4-mk-pXQ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="yGT-Mq-Bdu" secondAttribute="trailing" id="HOv-fh-jqu"/>
-                                                <constraint firstAttribute="bottom" secondItem="yGT-Mq-Bdu" secondAttribute="bottom" id="TQW-2O-lgw"/>
-                                                <constraint firstItem="yGT-Mq-Bdu" firstAttribute="top" secondItem="spj-Mt-GHA" secondAttribute="top" id="cMy-OK-diI"/>
+                                                <constraint firstAttribute="bottom" secondItem="yGT-Mq-Bdu" secondAttribute="bottom" constant="5" id="TQW-2O-lgw"/>
+                                                <constraint firstItem="yGT-Mq-Bdu" firstAttribute="top" secondItem="spj-Mt-GHA" secondAttribute="top" constant="5" id="cMy-OK-diI"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1014,28 +1029,54 @@
                             <tableViewSection headerTitle="Description" id="c6o-GV-a4l">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="staticCell" rowHeight="100" id="YlB-K2-QAw" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="367.5" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="377.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YlB-K2-QAw" id="m9O-TX-R13">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe the group..." translatesAutoresizingMaskIntoConstraints="NO" id="MvG-sU-BlW">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBe-cY-TbT" customClass="DesignableView" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="374" height="90"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe the group..." translatesAutoresizingMaskIntoConstraints="NO" id="MvG-sU-BlW">
+                                                            <rect key="frame" x="10" y="5" width="354" height="80"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="gaF-66-2uO" id="BYf-J9-88P"/>
+                                                            </connections>
+                                                        </textView>
+                                                    </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="gaF-66-2uO" id="BYf-J9-88P"/>
-                                                    </connections>
-                                                </textView>
+                                                    <constraints>
+                                                        <constraint firstItem="MvG-sU-BlW" firstAttribute="leading" secondItem="YBe-cY-TbT" secondAttribute="leading" constant="10" id="9ai-jX-WgT"/>
+                                                        <constraint firstItem="MvG-sU-BlW" firstAttribute="top" secondItem="YBe-cY-TbT" secondAttribute="top" constant="5" id="S1D-WZ-h5R"/>
+                                                        <constraint firstAttribute="bottom" secondItem="MvG-sU-BlW" secondAttribute="bottom" constant="5" id="deu-tg-7qN"/>
+                                                        <constraint firstAttribute="trailing" secondItem="MvG-sU-BlW" secondAttribute="trailing" constant="10" id="iCn-S3-Qvs"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="MvG-sU-BlW" secondAttribute="bottom" id="c2o-im-xCZ"/>
-                                                <constraint firstItem="MvG-sU-BlW" firstAttribute="top" secondItem="m9O-TX-R13" secondAttribute="top" id="kTX-Z1-G3E"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="MvG-sU-BlW" secondAttribute="trailing" id="pQg-DT-AfD"/>
-                                                <constraint firstItem="MvG-sU-BlW" firstAttribute="leading" secondItem="m9O-TX-R13" secondAttribute="leadingMargin" id="yjZ-xo-dXg"/>
+                                                <constraint firstItem="YBe-cY-TbT" firstAttribute="top" secondItem="m9O-TX-R13" secondAttribute="top" constant="5" id="Iju-V2-1X8"/>
+                                                <constraint firstAttribute="bottom" secondItem="YBe-cY-TbT" secondAttribute="bottom" constant="5" id="Pyb-fg-fhD"/>
+                                                <constraint firstItem="YBe-cY-TbT" firstAttribute="leading" secondItem="m9O-TX-R13" secondAttribute="leadingMargin" id="kGJ-4d-JRc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YBe-cY-TbT" secondAttribute="trailing" id="ou5-SG-Ck6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1044,7 +1085,7 @@
                             <tableViewSection headerTitle="Members" id="nrc-Up-eRL">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="staticCell" textLabel="QVF-bn-Eof" detailTextLabel="sUC-6v-PeQ" rowHeight="50" style="IBUITableViewCellStyleValue1" id="yKK-pf-Vpv" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="523.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="533.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yKK-pf-Vpv" id="Fyf-1o-s2W">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
@@ -1072,7 +1113,7 @@
                             <tableViewSection id="pPR-l4-Tup">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="LxY-kK-73W">
-                                        <rect key="frame" x="0.0" y="609.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="619.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LxY-kK-73W" id="HAY-kv-dQO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -1347,24 +1388,39 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Name" id="bmr-rO-uW3">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="quA-Rr-bv1">
-                                        <rect key="frame" x="0.0" y="261.5" width="414" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="60" id="quA-Rr-bv1">
+                                        <rect key="frame" x="0.0" y="261.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="quA-Rr-bv1" id="KEf-mL-ctS">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAz-xO-GQH">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="50"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAz-xO-GQH" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="374" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="iAz-xO-GQH" firstAttribute="top" secondItem="KEf-mL-ctS" secondAttribute="top" id="00t-cI-Bvo"/>
+                                                <constraint firstItem="iAz-xO-GQH" firstAttribute="top" secondItem="KEf-mL-ctS" secondAttribute="top" constant="5" id="00t-cI-Bvo"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="iAz-xO-GQH" secondAttribute="trailing" id="Qxm-bT-GIO"/>
                                                 <constraint firstItem="iAz-xO-GQH" firstAttribute="leading" secondItem="KEf-mL-ctS" secondAttribute="leadingMargin" id="Scc-KT-zFy"/>
-                                                <constraint firstAttribute="bottom" secondItem="iAz-xO-GQH" secondAttribute="bottom" id="rLu-yu-MCW"/>
+                                                <constraint firstAttribute="bottom" secondItem="iAz-xO-GQH" secondAttribute="bottom" constant="5" id="rLu-yu-MCW"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1373,28 +1429,54 @@
                             <tableViewSection headerTitle="Description" id="zF3-x0-fKS">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="100" id="fkn-js-fr7">
-                                        <rect key="frame" x="0.0" y="367.5" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="377.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fkn-js-fr7" id="JFN-pL-xb0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe the group..." translatesAutoresizingMaskIntoConstraints="NO" id="sgz-bE-BP6">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="100"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-is-Vwi" customClass="DesignableView" customModule="Fun_Stress" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="374" height="90"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe the group..." translatesAutoresizingMaskIntoConstraints="NO" id="sgz-bE-BP6">
+                                                            <rect key="frame" x="10" y="5" width="354" height="80"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <connections>
+                                                                <outlet property="delegate" destination="MG8-4e-ELw" id="uwD-Kh-agM"/>
+                                                            </connections>
+                                                        </textView>
+                                                    </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                    <connections>
-                                                        <outlet property="delegate" destination="MG8-4e-ELw" id="uwD-Kh-agM"/>
-                                                    </connections>
-                                                </textView>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="sgz-bE-BP6" secondAttribute="trailing" constant="10" id="N3v-Il-YYm"/>
+                                                        <constraint firstItem="sgz-bE-BP6" firstAttribute="top" secondItem="Roc-is-Vwi" secondAttribute="top" constant="5" id="VSM-O6-hqI"/>
+                                                        <constraint firstAttribute="bottom" secondItem="sgz-bE-BP6" secondAttribute="bottom" constant="5" id="Zmq-Ra-7ej"/>
+                                                        <constraint firstItem="sgz-bE-BP6" firstAttribute="leading" secondItem="Roc-is-Vwi" secondAttribute="leading" constant="10" id="gCP-sp-052"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                            <size key="value" width="0.0" height="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="sgz-bE-BP6" secondAttribute="bottom" id="3Rh-dV-B2f"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="sgz-bE-BP6" secondAttribute="trailing" id="Lhc-wQ-3Sc"/>
-                                                <constraint firstItem="sgz-bE-BP6" firstAttribute="top" secondItem="JFN-pL-xb0" secondAttribute="top" id="jxs-nC-Sj0"/>
-                                                <constraint firstItem="sgz-bE-BP6" firstAttribute="leading" secondItem="JFN-pL-xb0" secondAttribute="leadingMargin" id="lU4-Ae-0pr"/>
+                                                <constraint firstItem="Roc-is-Vwi" firstAttribute="leading" secondItem="JFN-pL-xb0" secondAttribute="leadingMargin" id="Z8W-Xf-4yQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="Roc-is-Vwi" secondAttribute="bottom" constant="5" id="e66-NE-fZp"/>
+                                                <constraint firstItem="Roc-is-Vwi" firstAttribute="trailing" secondItem="JFN-pL-xb0" secondAttribute="trailingMargin" id="ob9-Bf-8gr"/>
+                                                <constraint firstItem="Roc-is-Vwi" firstAttribute="top" secondItem="JFN-pL-xb0" secondAttribute="top" constant="5" id="wzW-sz-TM9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1403,7 +1485,7 @@
                             <tableViewSection headerTitle="ADD/REMOVE Members" id="TV1-Lb-c6y">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addRemoveMembersStaticCell" textLabel="BZO-u7-5LX" detailTextLabel="k6a-Fn-gFD" rowHeight="50" style="IBUITableViewCellStyleValue1" id="VIH-1S-T2L" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="523.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="533.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VIH-1S-T2L" id="KMz-aO-Rzf">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
@@ -1431,7 +1513,7 @@
                             <tableViewSection id="vsv-R5-UaS">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="Oxe-dX-uaC">
-                                        <rect key="frame" x="0.0" y="609.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="619.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oxe-dX-uaC" id="yBp-zi-m3H">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -1465,7 +1547,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="20" id="OLH-8z-ujH">
-                                        <rect key="frame" x="0.0" y="659.5" width="414" height="20"/>
+                                        <rect key="frame" x="0.0" y="669.5" width="414" height="20"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OLH-8z-ujH" id="fcU-eG-b3d">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
@@ -1473,7 +1555,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="50" id="XkZ-hX-3pP">
-                                        <rect key="frame" x="0.0" y="679.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="689.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XkZ-hX-3pP" id="uxq-76-9jI">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>

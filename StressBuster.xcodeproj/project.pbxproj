@@ -18,6 +18,7 @@
 		BC1E3B022491DFC400DB66BF /* Button+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E3B012491DFC400DB66BF /* Button+Extensions.swift */; };
 		BC20E53B2444017F00C0E4F6 /* GroupTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20E53A2444017F00C0E4F6 /* GroupTVCell.swift */; };
 		BC22D77523F883F200E8ED1F /* UnfriendAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC22D77423F883F200E8ED1F /* UnfriendAlertVC.swift */; };
+		BC2420172493661600581B4D /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2420162493661600581B4D /* DesignableTextView.swift */; };
 		BC2852A6244FF42600CB9742 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2852A5244FF42500CB9742 /* MessageCell.swift */; };
 		BC387F962453054C006B920F /* AddMembersToGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387F952453054C006B920F /* AddMembersToGroup.swift */; };
 		BC387F98245305A8006B920F /* AddMemberToGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387F97245305A8006B920F /* AddMemberToGroupCell.swift */; };
@@ -119,6 +120,7 @@
 		BC1E3B012491DFC400DB66BF /* Button+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extensions.swift"; sourceTree = "<group>"; };
 		BC20E53A2444017F00C0E4F6 /* GroupTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTVCell.swift; sourceTree = "<group>"; };
 		BC22D77423F883F200E8ED1F /* UnfriendAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfriendAlertVC.swift; sourceTree = "<group>"; };
+		BC2420162493661600581B4D /* DesignableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
 		BC2852A5244FF42500CB9742 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		BC387F952453054C006B920F /* AddMembersToGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMembersToGroup.swift; sourceTree = "<group>"; };
 		BC387F97245305A8006B920F /* AddMemberToGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberToGroupCell.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				BCBCEE3923A65D1A0013E66B /* DesignableTextField.swift */,
+				BC2420162493661600581B4D /* DesignableTextView.swift */,
 				BCBCEE3723A65D190013E66B /* DesignableView.swift */,
 				BCBCEE3823A65D190013E66B /* DesignableButton.swift */,
 				BCBCEE3A23A65D1A0013E66B /* DesignableImageView.swift */,
@@ -739,6 +742,7 @@
 				BC387F962453054C006B920F /* AddMembersToGroup.swift in Sources */,
 				BC07174924479EEE0092CADC /* Date+Extensions.swift in Sources */,
 				BCA18FAF2442B449003B689C /* SelectCountryTVC.swift in Sources */,
+				BC2420172493661600581B4D /* DesignableTextView.swift in Sources */,
 				BCBCEE4A23A70B3C0013E66B /* DeleteAccountAlertVC.swift in Sources */,
 				BCEFA393244C0A4B00B85985 /* CurrentFriendTVCell.swift in Sources */,
 				BCB6595C24497F920040D771 /* FriendsTVCell.swift in Sources */,
