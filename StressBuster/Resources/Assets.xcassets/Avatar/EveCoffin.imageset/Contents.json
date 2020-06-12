@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "checkmark.png",
+      "filename" : "Eve Coffin.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "checkmark@2x.png",
+      "filename" : "Eve Coffin@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "checkmark@3x.png",
+      "filename" : "Eve Coffin@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
