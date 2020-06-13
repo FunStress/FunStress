@@ -17,6 +17,7 @@ extension Data {
             return  nil
         }
     }
+    
     var htmlToString: String {
         return htmlToAttributedString?.string ?? ""
     }
@@ -26,7 +27,56 @@ extension String {
     var htmlToAttributedString: NSAttributedString? {
         return Data(utf8).htmlToAttributedString
     }
+    
     var htmlToString: String {
         return htmlToAttributedString?.string ?? ""
+    }
+    
+    // MARK: String Helper
+    // Example = Ex
+    // For Example = FE
+    // for example = fe
+    // "" = DP
+    
+    public var initials: String {
+        
+        let words = components(separatedBy: .whitespacesAndNewlines)
+        
+        //to identify letters
+        let letters = CharacterSet.letters
+        var firstChar : String = ""
+        var secondChar : String = ""
+        var firstCharFoundIndex : Int = -1
+        var firstCharFound : Bool = false
+        
+        for (index, item) in words.enumerated() {
+            
+            if item.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                continue
+            }
+            
+            //browse through the rest of the word
+            for (_, char) in item.unicodeScalars.enumerated() {
+                
+                //check if its a aplha
+                if letters.contains(char) {
+                    
+                    if !firstCharFound {
+                        firstChar = String(char)
+                        firstCharFound = true
+                        firstCharFoundIndex = index
+                    } else {
+                        break
+                    }
+                }
+            }
+        }
+        
+        if firstChar.isEmpty && secondChar.isEmpty {
+            firstChar = "D"
+            secondChar = "P"
+        }
+        
+        return firstChar + secondChar
     }
 }

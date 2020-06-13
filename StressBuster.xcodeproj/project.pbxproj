@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B4F81AC15950653EB0979AE /* Pods_StressBuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1EE21E78036B443D4A72CC /* Pods_StressBuster.framework */; };
+		8BB764E1D28EAC5ACF5B9796 /* Pods_StressBuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E48F3CEBCE4884EDC866A9 /* Pods_StressBuster.framework */; };
 		BC00EB9F23BB3F8D00C2232B /* ContactsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00EB9E23BB3F8D00C2232B /* ContactsHelper.swift */; };
 		BC033F6F23B9288F00F9534F /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC033F6E23B9288F00F9534F /* CDManager.swift */; };
 		BC033F7323BB0E0F00F9534F /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC033F7223BB0E0F00F9534F /* UIImageView+Extensions.swift */; };
@@ -99,6 +99,7 @@
 		BCC4193D244241D7002671C8 /* UserAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC4193C244241D7002671C8 /* UserAuth.storyboard */; };
 		BCC41940244289B8002671C8 /* Avatars.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCC4193F244289B8002671C8 /* Avatars.plist */; };
 		BCCD69A323CECF9D009783EF /* SignOutAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD69A223CECF9D009783EF /* SignOutAlertVC.swift */; };
+		BCCEC26D2493D4E500FC1C6D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEC26C2493D4E500FC1C6D /* UIColor+Extensions.swift */; };
 		BCECB54F23B5525E002BC808 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCECB54E23B5525E002BC808 /* AppConfig.swift */; };
 		BCECB57423B69F7D002BC808 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCECB57323B69F7D002BC808 /* GoogleService-Info.plist */; };
 		BCEF587D23E6D42D00F51EC1 /* SoundsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF587C23E6D42D00F51EC1 /* SoundsHelper.swift */; };
@@ -108,8 +109,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AEC0A28DA2A0A10576825E08 /* Pods-StressBuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.release.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.release.xcconfig"; sourceTree = "<group>"; };
-		B1773F96A85E2506468BEE15 /* Pods-StressBuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.debug.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.debug.xcconfig"; sourceTree = "<group>"; };
 		BC00EB9E23BB3F8D00C2232B /* ContactsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsHelper.swift; sourceTree = "<group>"; };
 		BC033F6E23B9288F00F9534F /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
 		BC033F7223BB0E0F00F9534F /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
@@ -154,7 +153,7 @@
 		BCA18FB6244373F2003B689C /* FriendCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCVCell.swift; sourceTree = "<group>"; };
 		BCA18FB824437501003B689C /* StaticTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTVCell.swift; sourceTree = "<group>"; };
 		BCB6595B24497F920040D771 /* FriendsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTVCell.swift; sourceTree = "<group>"; };
-		BCBCEE1623A6566C0013E66B /* Fun Stress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fun Stress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCBCEE1623A6566C0013E66B /* Tusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBCEE1923A6566C0013E66B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBCEE2323A6566C0013E66B /* StressBuster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StressBuster.xcdatamodel; sourceTree = "<group>"; };
 		BCBCEE2523A6566D0013E66B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,13 +204,16 @@
 		BCC4193C244241D7002671C8 /* UserAuth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserAuth.storyboard; sourceTree = "<group>"; };
 		BCC4193F244289B8002671C8 /* Avatars.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Avatars.plist; sourceTree = "<group>"; };
 		BCCD69A223CECF9D009783EF /* SignOutAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutAlertVC.swift; sourceTree = "<group>"; };
+		BCCEC26C2493D4E500FC1C6D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		BCECB54E23B5525E002BC808 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		BCECB57323B69F7D002BC808 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BCEF587C23E6D42D00F51EC1 /* SoundsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsHelper.swift; sourceTree = "<group>"; };
 		BCEFA390244C025900B85985 /* CurrentFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFriendsVC.swift; sourceTree = "<group>"; };
 		BCEFA392244C0A4B00B85985 /* CurrentFriendTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFriendTVCell.swift; sourceTree = "<group>"; };
 		BCF1FA422452A57600F289D7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		EF1EE21E78036B443D4A72CC /* Pods_StressBuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StressBuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFCC53DC00A142B47B98B73 /* Pods-StressBuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.release.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.release.xcconfig"; sourceTree = "<group>"; };
+		D022D81C5A3E3C71AC820127 /* Pods-StressBuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.debug.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.debug.xcconfig"; sourceTree = "<group>"; };
+		E6E48F3CEBCE4884EDC866A9 /* Pods_StressBuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StressBuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,7 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC4EDE3723ACF63700E673C5 /* MapKit.framework in Frameworks */,
-				8B4F81AC15950653EB0979AE /* Pods_StressBuster.framework in Frameworks */,
+				8BB764E1D28EAC5ACF5B9796 /* Pods_StressBuster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,8 +232,8 @@
 		0B9200E556E9DBB2D846240F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B1773F96A85E2506468BEE15 /* Pods-StressBuster.debug.xcconfig */,
-				AEC0A28DA2A0A10576825E08 /* Pods-StressBuster.release.xcconfig */,
+				D022D81C5A3E3C71AC820127 /* Pods-StressBuster.debug.xcconfig */,
+				BCFCC53DC00A142B47B98B73 /* Pods-StressBuster.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -241,7 +243,7 @@
 			children = (
 				BC4EDE3623ACF63700E673C5 /* MapKit.framework */,
 				BC4EDE2623ABA89300E673C5 /* FlagPhoneNumber.bundle */,
-				EF1EE21E78036B443D4A72CC /* Pods_StressBuster.framework */,
+				E6E48F3CEBCE4884EDC866A9 /* Pods_StressBuster.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -262,6 +264,7 @@
 				BC071746244663150092CADC /* String+Extensions.swift */,
 				BC07174824479EED0092CADC /* Date+Extensions.swift */,
 				BC1E3B012491DFC400DB66BF /* Button+Extensions.swift */,
+				BCCEC26C2493D4E500FC1C6D /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -309,7 +312,7 @@
 		BCBCEE1723A6566C0013E66B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BCBCEE1623A6566C0013E66B /* Fun Stress.app */,
+				BCBCEE1623A6566C0013E66B /* Tusic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,7 +359,6 @@
 			isa = PBXGroup;
 			children = (
 				BCBCEE2723A6566D0013E66B /* LaunchScreen.storyboard */,
-				BCF0CCED2459305000DC714C /* Asset Contributors */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -578,13 +580,6 @@
 			path = "Alert Sounds";
 			sourceTree = "<group>";
 		};
-		BCF0CCED2459305000DC714C /* Asset Contributors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Asset Contributors";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -592,11 +587,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCBCEE2D23A6566D0013E66B /* Build configuration list for PBXNativeTarget "StressBuster" */;
 			buildPhases = (
-				7CF4F0B14F8FBFC871E6F629 /* [CP] Check Pods Manifest.lock */,
+				3D1ADFDDAA9E98203F7BCF64 /* [CP] Check Pods Manifest.lock */,
 				BCBCEE1223A6566C0013E66B /* Sources */,
 				BCBCEE1323A6566C0013E66B /* Frameworks */,
 				BCBCEE1423A6566C0013E66B /* Resources */,
-				76B882A69E59C6FA074D648E /* [CP] Embed Pods Frameworks */,
+				27A08EA6829D961FACA83BBA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -604,7 +599,7 @@
 			);
 			name = StressBuster;
 			productName = StressBuster;
-			productReference = BCBCEE1623A6566C0013E66B /* Fun Stress.app */;
+			productReference = BCBCEE1623A6566C0013E66B /* Tusic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -681,7 +676,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		76B882A69E59C6FA074D648E /* [CP] Embed Pods Frameworks */ = {
+		27A08EA6829D961FACA83BBA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -698,7 +693,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7CF4F0B14F8FBFC871E6F629 /* [CP] Check Pods Manifest.lock */ = {
+		3D1ADFDDAA9E98203F7BCF64 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -768,6 +763,7 @@
 				BC2852A6244FF42600CB9742 /* MessageCell.swift in Sources */,
 				BC071747244663150092CADC /* String+Extensions.swift in Sources */,
 				BCBCEE1A23A6566C0013E66B /* AppDelegate.swift in Sources */,
+				BCCEC26D2493D4E500FC1C6D /* UIColor+Extensions.swift in Sources */,
 				BCBF0C832441F47200F4B88E /* EditGroupTVC.swift in Sources */,
 				BCEF587D23E6D42D00F51EC1 /* SoundsHelper.swift in Sources */,
 				BCC4193A24423757002671C8 /* AvatarCVCell.swift in Sources */,
@@ -860,7 +856,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -914,7 +910,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -926,7 +922,7 @@
 		};
 		BCBCEE2E23A6566D0013E66B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1773F96A85E2506468BEE15 /* Pods-StressBuster.debug.xcconfig */;
+			baseConfigurationReference = D022D81C5A3E3C71AC820127 /* Pods-StressBuster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "StressBuster/Stress Buster.entitlements";
@@ -935,14 +931,14 @@
 				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 6RNV8J8H5H;
 				INFOPLIST_FILE = StressBuster/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stressbusterapp.StressBuster;
-				PRODUCT_NAME = "Fun Stress";
+				PRODUCT_NAME = Tusic;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -951,7 +947,7 @@
 		};
 		BCBCEE2F23A6566D0013E66B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEC0A28DA2A0A10576825E08 /* Pods-StressBuster.release.xcconfig */;
+			baseConfigurationReference = BCFCC53DC00A142B47B98B73 /* Pods-StressBuster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "StressBuster/Stress Buster.entitlements";
@@ -960,14 +956,14 @@
 				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 6RNV8J8H5H;
 				INFOPLIST_FILE = StressBuster/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stressbusterapp.StressBuster;
-				PRODUCT_NAME = "Fun Stress";
+				PRODUCT_NAME = Tusic;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -23,6 +23,8 @@ class ContactsTVCell: UITableViewCell {
         self.contact = contact
         if let imgData = contact.image {
             self.imgView.image = UIImage(data: imgData)
+        } else {
+            imgView.setImage(string: contact.firstName, color: UIColor.colorHash(name: contact.firstName), circular: false, stroke: false, textAttributes: [NSAttributedString.Key.font: UIFont(descriptor: UIFontDescriptor(name: "Poppins-Bold", size: 15.0), size: 15.0)])
         }
         self.nameLbl.text = "\(contact.firstName) \(contact.lastName)"
         self.phoneNumberLbl.text = contact.phoneNumber
