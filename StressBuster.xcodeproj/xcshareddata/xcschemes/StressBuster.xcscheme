@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BCBCEE1523A6566C0013E66B"
-               BuildableName = "Fun Stress.app"
+               BuildableName = "Tusic.app"
                BlueprintName = "StressBuster"
                ReferencedContainer = "container:StressBuster.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BCBCEE1523A6566C0013E66B"
-            BuildableName = "Fun Stress.app"
+            BuildableName = "Tusic.app"
             BlueprintName = "StressBuster"
             ReferencedContainer = "container:StressBuster.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BCBCEE1523A6566C0013E66B"
-            BuildableName = "Fun Stress.app"
+            BuildableName = "Tusic.app"
             BlueprintName = "StressBuster"
             ReferencedContainer = "container:StressBuster.xcodeproj">
          </BuildableReference>

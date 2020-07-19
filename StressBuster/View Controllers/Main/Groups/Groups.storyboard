@@ -26,7 +26,7 @@
         <!--Groups-->
         <scene sceneID="rR1-Zh-ueA">
             <objects>
-                <viewController storyboardIdentifier="groupChatsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pxz-0I-zYK" customClass="GroupChatsVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="groupChatsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pxz-0I-zYK" customClass="GroupChatsVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NEA-JN-EM2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="groupCell" rowHeight="75" id="iMO-0a-kab" customClass="GroupTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="groupCell" rowHeight="75" id="iMO-0a-kab" customClass="GroupTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="84" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iMO-0a-kab" id="MuQ-jY-1Et">
@@ -57,7 +57,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5B2-Ih-mES" customClass="DesignableImageView" customModule="Fun_Stress" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5B2-Ih-mES" customClass="DesignableImageView" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="12.5" width="50" height="50"/>
                                                     <color key="backgroundColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -157,7 +157,7 @@
         <!--Group Name-->
         <scene sceneID="ai5-it-H51">
             <objects>
-                <viewController id="InS-Yk-KPX" customClass="GroupVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="InS-Yk-KPX" customClass="GroupVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mqX-cg-GM3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,7 +182,7 @@
                                         <rect key="frame" x="0.0" y="22" width="414" height="617"/>
                                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messageCell" rowHeight="100" id="YcE-OE-ZtO" customClass="MessageCell" customModule="Fun_Stress" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messageCell" rowHeight="100" id="YcE-OE-ZtO" customClass="MessageCell" customModule="Tusic" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YcE-OE-ZtO" id="MBA-gY-7SK">
@@ -192,10 +192,10 @@
                                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57I-0L-1bu">
                                                             <rect key="frame" x="20" y="5" width="374" height="90"/>
                                                             <subviews>
-                                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRK-iD-eMD" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRK-iD-eMD" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                                                     <rect key="frame" x="20" y="0.0" width="334" height="72"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albumCover" translatesAutoresizingMaskIntoConstraints="NO" id="QVY-cU-v0y" customClass="DesignableImageView" customModule="Fun_Stress" customModuleProvider="target">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albumCover" translatesAutoresizingMaskIntoConstraints="NO" id="QVY-cU-v0y" customClass="DesignableImageView" customModule="Tusic" customModuleProvider="target">
                                                                             <rect key="frame" x="8" y="11" width="50" height="50"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="50" id="hAq-vY-Eb3"/>
@@ -297,7 +297,7 @@
                                             <outlet property="delegate" destination="InS-Yk-KPX" id="5TU-uH-cap"/>
                                         </connections>
                                     </tableView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTs-7d-9hF" customClass="DesignableView" customModule="Fun_Stress" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTs-7d-9hF" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="644" width="414" height="125"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Someone is stressed!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGq-E0-nmm">
@@ -333,7 +333,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aog-3m-Df8" customClass="DesignableView" customModule="Fun_Stress" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aog-3m-Df8" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
                                 <rect key="frame" x="334" y="772" width="60" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TP9-3D-Cer">
@@ -387,7 +387,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaN-Cr-MDV" customClass="DesignableView" customModule="Fun_Stress" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaN-Cr-MDV" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
                                 <rect key="frame" x="20" y="772" width="60" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KP7-co-5ax">
@@ -492,36 +492,18 @@
         <!--Alert GroupVC-->
         <scene sceneID="sco-pG-L7N">
             <objects>
-                <viewController id="lOR-9u-TUH" customClass="AlertGroupVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lOR-9u-TUH" customClass="AlertGroupVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GkC-6K-rig">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feeling Stressed?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vr-k5-FWa">
-                                <rect key="frame" x="20" y="89" width="374" height="42"/>
-                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert the entire group. This will send an alert to everyone and can help you reduce your stress levels." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbd-GV-Pp1">
+                                <rect key="frame" x="20" y="406" width="374" height="84"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="jL6-zQ-Ygv">
-                                <rect key="frame" x="20" y="311" width="354" height="274"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="42o-ry-W7v">
-                                        <rect key="frame" x="102" y="0.0" width="150" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="Y5A-rr-rHH"/>
-                                            <constraint firstAttribute="width" constant="150" id="kw9-OC-zsm"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert the entire group. This will send an alert to everyone and can help you reduce your stress levels." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbd-GV-Pp1">
-                                        <rect key="frame" x="0.5" y="190" width="353" height="84"/>
-                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iz-Xg-qJk" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iz-Xg-qJk" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                 <rect key="frame" x="119.5" y="762" width="175" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -552,20 +534,25 @@
                                     <action selector="cancelBtnPressed:" destination="lOR-9u-TUH" eventType="touchUpInside" id="NXh-FI-zvS"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frustratedIcon" translatesAutoresizingMaskIntoConstraints="NO" id="UER-Bj-GaK">
+                                <rect key="frame" x="157" y="99" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EZt-Z4-nqg"/>
+                                    <constraint firstAttribute="height" constant="100" id="IaG-Rf-tiW"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="jL6-zQ-Ygv" firstAttribute="leading" secondItem="y1Y-kz-BVi" secondAttribute="leading" constant="20" id="1pv-MF-YT2"/>
-                            <constraint firstItem="0Vr-k5-FWa" firstAttribute="leading" secondItem="y1Y-kz-BVi" secondAttribute="leading" constant="20" id="24u-Ga-3M6"/>
+                            <constraint firstItem="y1Y-kz-BVi" firstAttribute="trailing" secondItem="cbd-GV-Pp1" secondAttribute="trailing" constant="20" id="6lt-re-4PC"/>
+                            <constraint firstItem="UER-Bj-GaK" firstAttribute="centerX" secondItem="GkC-6K-rig" secondAttribute="centerX" id="74H-UC-kCl"/>
                             <constraint firstItem="BMV-eS-0cK" firstAttribute="top" secondItem="y1Y-kz-BVi" secondAttribute="top" id="I9a-bi-8YZ"/>
-                            <constraint firstItem="jL6-zQ-Ygv" firstAttribute="centerY" secondItem="GkC-6K-rig" secondAttribute="centerY" id="NvJ-hn-QRi"/>
-                            <constraint firstItem="0Vr-k5-FWa" firstAttribute="top" secondItem="BMV-eS-0cK" secondAttribute="bottom" id="QF4-VQ-MIL"/>
+                            <constraint firstItem="cbd-GV-Pp1" firstAttribute="leading" secondItem="y1Y-kz-BVi" secondAttribute="leading" constant="20" id="Mm7-sy-jvs"/>
                             <constraint firstItem="6iz-Xg-qJk" firstAttribute="centerX" secondItem="GkC-6K-rig" secondAttribute="centerX" id="S7o-Qw-b67"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="jL6-zQ-Ygv" secondAttribute="trailing" constant="20" id="aXS-TM-SDS"/>
                             <constraint firstItem="y1Y-kz-BVi" firstAttribute="trailing" secondItem="BMV-eS-0cK" secondAttribute="trailing" constant="20" id="g4I-kn-4Bg"/>
-                            <constraint firstItem="0Vr-k5-FWa" firstAttribute="centerX" secondItem="GkC-6K-rig" secondAttribute="centerX" id="noi-Mp-Shc"/>
-                            <constraint firstItem="y1Y-kz-BVi" firstAttribute="trailing" secondItem="0Vr-k5-FWa" secondAttribute="trailing" constant="20" id="qPz-dv-cBc"/>
+                            <constraint firstItem="UER-Bj-GaK" firstAttribute="top" secondItem="BMV-eS-0cK" secondAttribute="bottom" constant="10" id="ozP-vD-uF7"/>
                             <constraint firstItem="y1Y-kz-BVi" firstAttribute="bottom" secondItem="6iz-Xg-qJk" secondAttribute="bottom" constant="50" id="stU-5m-tI0"/>
+                            <constraint firstItem="cbd-GV-Pp1" firstAttribute="centerY" secondItem="GkC-6K-rig" secondAttribute="centerY" id="w6H-yz-Vk4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y1Y-kz-BVi"/>
                     </view>
@@ -581,7 +568,7 @@
         <!--Search MusicVC-->
         <scene sceneID="K4l-AH-vur">
             <objects>
-                <viewController id="lDC-Gf-HgX" customClass="SearchMusicVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lDC-Gf-HgX" customClass="SearchMusicVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jZa-3H-5Lr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -592,7 +579,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search by Artist Name..." translatesAutoresizingMaskIntoConstraints="NO" id="sBy-i6-djV">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search music..." translatesAutoresizingMaskIntoConstraints="NO" id="sBy-i6-djV">
                                 <rect key="frame" x="0.0" y="131" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" returnKeyType="search" textContentType="name"/>
                                 <connections>
@@ -607,17 +594,17 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SPf-Dd-mQm">
                                 <rect key="frame" x="0.0" y="187" width="414" height="675"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="musicCell" rowHeight="75" id="RBS-CH-gHf" customClass="MusicTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="musicCell" rowHeight="75" id="RBS-CH-gHf" customClass="MusicTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RBS-CH-gHf" id="bz6-hO-LeF">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albumCover" translatesAutoresizingMaskIntoConstraints="NO" id="Gme-ln-dxg" customClass="DesignableImageView" customModule="Fun_Stress" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albumCover" translatesAutoresizingMaskIntoConstraints="NO" id="Gme-ln-dxg" customClass="DesignableImageView" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="12.5" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="2r3-wg-YWV"/>
@@ -682,7 +669,7 @@
                                 <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                                 <color key="color" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxl-lw-0oF" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxl-lw-0oF" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                 <rect key="frame" x="132" y="762" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -755,7 +742,7 @@
         <!--Add Friends-->
         <scene sceneID="ool-xN-N6s">
             <objects>
-                <viewController id="yiU-Sa-8Fw" customClass="SendFriendRequestsVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yiU-Sa-8Fw" customClass="SendFriendRequestsVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tVs-pZ-ZcD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -770,14 +757,14 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="contactsCell" rowHeight="75" id="gjb-9V-53n" customClass="ContactsTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="contactsCell" rowHeight="75" id="gjb-9V-53n" customClass="ContactsTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gjb-9V-53n" id="8Yc-XK-weY">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="IxO-eI-1qy" customClass="DesignableImageView" customModule="Fun_Stress" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="IxO-eI-1qy" customClass="DesignableImageView" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="17.5" width="40" height="40"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -807,7 +794,7 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU4-WS-LTv" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU4-WS-LTv" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="274" y="20" width="120" height="35"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -902,7 +889,7 @@
         <!--New Group-->
         <scene sceneID="b3V-xh-9a6">
             <objects>
-                <tableViewController id="gaF-66-2uO" customClass="NewGroupTVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="gaF-66-2uO" customClass="NewGroupTVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="GVp-5K-r4h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -910,7 +897,7 @@
                         <sections>
                             <tableViewSection headerTitle="Avatar" id="mQT-Ao-hw7">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="staticCell" rowHeight="150" id="AUT-Zc-bwf" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="staticCell" rowHeight="150" id="AUT-Zc-bwf" customClass="StaticTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AUT-Zc-bwf" id="hYq-CT-fVA">
@@ -927,14 +914,14 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="NhW-LN-2aD" customClass="AvatarCVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="NhW-LN-2aD" customClass="AvatarCVCell" customModule="Tusic" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="125" height="140"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="efi-OM-ZUb">
                                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Iu7-9s-ZXU" customClass="DesignableImageView" customModule="Fun_Stress" customModuleProvider="target">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Iu7-9s-ZXU" customClass="DesignableImageView" customModule="Tusic" customModuleProvider="target">
                                                                         <rect key="frame" x="27.5" y="5" width="70" height="70"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="70" id="BLO-K6-zjL"/>
@@ -988,14 +975,14 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Name" id="slt-UZ-qlV">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="staticNameCell" rowHeight="60" id="Qd7-q2-jFe" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="staticNameCell" rowHeight="60" id="Qd7-q2-jFe" customClass="StaticTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="261.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qd7-q2-jFe" id="spj-Mt-GHA">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGT-Mq-Bdu" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yGT-Mq-Bdu" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="50"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
@@ -1028,14 +1015,14 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Description" id="c6o-GV-a4l">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="staticCell" rowHeight="100" id="YlB-K2-QAw" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="staticCell" rowHeight="100" id="YlB-K2-QAw" customClass="StaticTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="377.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YlB-K2-QAw" id="m9O-TX-R13">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBe-cY-TbT" customClass="DesignableView" customModule="Fun_Stress" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBe-cY-TbT" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="90"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe the group..." translatesAutoresizingMaskIntoConstraints="NO" id="MvG-sU-BlW">
@@ -1084,7 +1071,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Members" id="nrc-Up-eRL">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="staticCell" textLabel="QVF-bn-Eof" detailTextLabel="sUC-6v-PeQ" rowHeight="50" style="IBUITableViewCellStyleValue1" id="yKK-pf-Vpv" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="staticCell" textLabel="QVF-bn-Eof" detailTextLabel="sUC-6v-PeQ" rowHeight="50" style="IBUITableViewCellStyleValue1" id="yKK-pf-Vpv" customClass="StaticTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="533.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yKK-pf-Vpv" id="Fyf-1o-s2W">
@@ -1119,7 +1106,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef8-9N-bmp" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef8-9N-bmp" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="132" y="0.0" width="150" height="50"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -1197,7 +1184,7 @@
         <!--Requests-->
         <scene sceneID="3Xo-rh-e5j">
             <objects>
-                <viewController id="0Ao-3K-jrb" customClass="FriendRequestsVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0Ao-3K-jrb" customClass="FriendRequestsVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c2W-tD-Buk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1213,7 +1200,7 @@
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="requestCell" rowHeight="60" id="8oW-ce-wpm" customClass="RequestsTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="requestCell" rowHeight="60" id="8oW-ce-wpm" customClass="RequestsTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8oW-ce-wpm" id="CxB-qd-N8F">
@@ -1229,7 +1216,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4d-M2-bV7" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4d-M2-bV7" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="274" y="12.5" width="120" height="35"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -1302,7 +1289,7 @@
         <!--Edit-->
         <scene sceneID="q9u-C3-Paz">
             <objects>
-                <tableViewController id="MG8-4e-ELw" customClass="EditGroupTVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="MG8-4e-ELw" customClass="EditGroupTVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZbI-nb-q2A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1310,7 +1297,7 @@
                         <sections>
                             <tableViewSection headerTitle="Avatar" id="fOT-Yb-IwV">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="staticCell" rowHeight="150" id="aUG-Mc-wnj" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="staticCell" rowHeight="150" id="aUG-Mc-wnj" customClass="StaticTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aUG-Mc-wnj" id="IYZ-tc-BQM">
@@ -1327,14 +1314,14 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="8qb-jG-vF0" customClass="AvatarCVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="8qb-jG-vF0" customClass="AvatarCVCell" customModule="Tusic" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="125" height="140"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="A92-lG-Vwi">
                                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="HBv-1T-Z9O" customClass="DesignableImageView" customModule="Fun_Stress" customModuleProvider="target">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="HBv-1T-Z9O" customClass="DesignableImageView" customModule="Tusic" customModuleProvider="target">
                                                                         <rect key="frame" x="27.5" y="5" width="70" height="70"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="70" id="0HU-1j-oUD"/>
@@ -1395,7 +1382,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAz-xO-GQH" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAz-xO-GQH" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="50"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
@@ -1435,7 +1422,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-is-Vwi" customClass="DesignableView" customModule="Fun_Stress" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-is-Vwi" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="90"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Describe the group..." translatesAutoresizingMaskIntoConstraints="NO" id="sgz-bE-BP6">
@@ -1484,7 +1471,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="ADD/REMOVE Members" id="TV1-Lb-c6y">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addRemoveMembersStaticCell" textLabel="BZO-u7-5LX" detailTextLabel="k6a-Fn-gFD" rowHeight="50" style="IBUITableViewCellStyleValue1" id="VIH-1S-T2L" customClass="StaticTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addRemoveMembersStaticCell" textLabel="BZO-u7-5LX" detailTextLabel="k6a-Fn-gFD" rowHeight="50" style="IBUITableViewCellStyleValue1" id="VIH-1S-T2L" customClass="StaticTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="533.5" width="414" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VIH-1S-T2L" id="KMz-aO-Rzf">
@@ -1519,7 +1506,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-It-75q" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds9-It-75q" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="132" y="0.0" width="150" height="50"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -1561,7 +1548,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSP-2w-tAX" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSP-2w-tAX" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="107" y="0.0" width="200" height="50"/>
                                                     <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -1618,7 +1605,7 @@
         <!--Add/Remove Members-->
         <scene sceneID="6vz-n2-fXg">
             <objects>
-                <viewController id="AaD-O2-qEf" customClass="AddFriendsVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AaD-O2-qEf" customClass="AddFriendsVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z6U-D2-PUy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1627,7 +1614,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addFriendsCell" rowHeight="60" id="GZp-bt-fLg" customClass="AddFriendsTVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addFriendsCell" rowHeight="60" id="GZp-bt-fLg" customClass="AddFriendsTVCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GZp-bt-fLg" id="szM-0Z-UUW">
@@ -1640,7 +1627,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNi-gb-sAI" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNi-gb-sAI" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="349" y="7.5" width="45" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="RrW-tX-5hF"/>
@@ -1707,7 +1694,7 @@
         <!--Add Members-->
         <scene sceneID="8Pb-in-13E">
             <objects>
-                <viewController id="ETk-Ru-guN" customClass="AddMembersToGroup" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ETk-Ru-guN" customClass="AddMembersToGroup" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ubk-CT-7Y5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1722,7 +1709,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addMemberToGroupCell" rowHeight="60" id="C9H-3V-96y" customClass="AddMemberToGroupCell" customModule="Fun_Stress" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addMemberToGroupCell" rowHeight="60" id="C9H-3V-96y" customClass="AddMemberToGroupCell" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C9H-3V-96y" id="sa6-ug-Gql">
@@ -1735,7 +1722,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-99-KYb" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgi-99-KYb" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="349" y="7.5" width="45" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="45" id="XDN-rX-YUv"/>
@@ -1754,7 +1741,7 @@
                                                         <action selector="addRemoveBtnPressed:" destination="C9H-3V-96y" eventType="touchUpInside" id="YhT-tK-1G4"/>
                                                     </connections>
                                                 </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5B5-Pe-0tV" customClass="DesignableImageView" customModule="Fun_Stress" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5B5-Pe-0tV" customClass="DesignableImageView" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="7.5" width="45" height="45"/>
                                                     <color key="backgroundColor" red="0.82352941180000006" green="0.86274509799999999" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -1836,9 +1823,9 @@
         <image name="checkmark" width="22" height="22"/>
         <image name="doneIcon" width="25" height="25"/>
         <image name="edit" width="25" height="25"/>
+        <image name="frustratedIcon" width="100" height="100"/>
         <image name="groupsSelected" width="25" height="25"/>
         <image name="groupsUnselected" width="25" height="25"/>
-        <image name="launchLogo" width="100" height="100"/>
         <image name="musicNoteIcon-white" width="40" height="40"/>
         <image name="musicPlayingIcon" width="30" height="30"/>
         <image name="newGroup" width="25" height="25"/>

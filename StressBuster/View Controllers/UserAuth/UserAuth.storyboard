@@ -20,7 +20,7 @@
         <!--Welcome-->
         <scene sceneID="LGJ-PZ-nad">
             <objects>
-                <viewController id="Edz-aI-Phk" customClass="WelcomeVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Edz-aI-Phk" customClass="WelcomeVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Za-Sj-9DS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3l4-MK-k7y">
                                 <rect key="frame" x="94.5" y="623.5" width="225" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtM-fp-qp5" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtM-fp-qp5" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="225" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -53,7 +53,7 @@
                                             <action selector="loginBtnPressed:" destination="Edz-aI-Phk" eventType="touchUpInside" id="GFX-s0-S4P"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIc-X6-PFx" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIc-X6-PFx" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="225" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -77,7 +77,7 @@
                                     <constraint firstAttribute="width" constant="225" id="TFD-HX-nWM"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appHomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-gr-NWg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo150" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-gr-NWg">
                                 <rect key="frame" x="132" y="138" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Bhi-zM-GLG"/>
@@ -110,7 +110,7 @@
         <!--Login-->
         <scene sceneID="qCa-UN-Hfs">
             <objects>
-                <viewController id="2EX-15-zjb" customClass="LoginRegisterVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2EX-15-zjb" customClass="LoginRegisterVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iWM-Fo-nNW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTO-XH-zBj" customClass="DesignableView" customModule="Fun_Stress" customModuleProvider="target">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTO-XH-zBj" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="32" width="374" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qft-sN-E99">
@@ -141,7 +141,7 @@
                                                     <action selector="countryCodeBtnPressed:" destination="2EX-15-zjb" eventType="touchUpInside" id="Sao-rU-L0i"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1234567890" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2e-ul-HLK" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1234567890" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2e-ul-HLK" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                 <rect key="frame" x="75" y="0.0" width="299" height="50"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="phonePad" textContentType="name"/>
@@ -191,7 +191,7 @@
                                     <constraint firstAttribute="trailing" secondItem="QyG-OL-JeR" secondAttribute="trailing" id="mNA-nx-z68"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-Qv-utU" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-Qv-utU" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                 <rect key="frame" x="224" y="407" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -211,7 +211,7 @@
                                     <action selector="nextBtnPressed:" destination="2EX-15-zjb" eventType="touchUpInside" id="Q74-bl-Sgn"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appHomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Dae-j8-iJh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Dae-j8-iJh">
                                 <rect key="frame" x="169.5" y="737" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="fAS-PC-Bnd"/>
@@ -247,14 +247,14 @@
         <!--Select Country-->
         <scene sceneID="Nkn-Wj-Txz">
             <objects>
-                <tableViewController id="grE-h5-bU1" customClass="SelectCountryTVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="grE-h5-bU1" customClass="SelectCountryTVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4C3-y7-ZcU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countryCell" rowHeight="60" id="PAV-Ei-Wem" customClass="CountryCell" customModule="Fun_Stress" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countryCell" rowHeight="60" id="PAV-Ei-Wem" customClass="CountryCell" customModule="Tusic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PAV-Ei-Wem" id="bPK-Il-1Ac">
@@ -307,12 +307,12 @@
         <!--Verify-->
         <scene sceneID="HwL-nO-Odz">
             <objects>
-                <viewController id="sKS-eU-hLD" customClass="VerifyCodeVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sKS-eU-hLD" customClass="VerifyCodeVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0lr-5X-bLi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appHomeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Mz6-Gq-Z8s">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Mz6-Gq-Z8s">
                                 <rect key="frame" x="169.5" y="737" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="B1c-kc-16B"/>
@@ -327,7 +327,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-gT-sgX" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123456" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pe7-gT-sgX" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                 <rect key="frame" x="20" y="311" width="374" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -350,7 +350,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxs-dh-Mnk" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxs-dh-Mnk" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                 <rect key="frame" x="244" y="391" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -436,7 +436,7 @@
         <!--Enter Details-->
         <scene sceneID="L7M-2r-foj">
             <objects>
-                <tableViewController id="EcQ-Gp-A0t" customClass="EnterDetailsTVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="EcQ-Gp-A0t" customClass="EnterDetailsTVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="LTv-0R-CXI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -461,14 +461,14 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="Omn-q2-Dc9" customClass="AvatarCVCell" customModule="Fun_Stress" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="Omn-q2-Dc9" customClass="AvatarCVCell" customModule="Tusic" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="125" height="140"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vif-Bx-Kme">
                                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="03x-Sd-t7H" customClass="DesignableImageView" customModule="Fun_Stress" customModuleProvider="target">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="03x-Sd-t7H" customClass="DesignableImageView" customModule="Tusic" customModuleProvider="target">
                                                                         <rect key="frame" x="27.5" y="5" width="70" height="70"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="70" id="2w7-yl-YTu"/>
@@ -529,7 +529,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GmY-nn-DuI" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GmY-nn-DuI" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="50"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
@@ -569,7 +569,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kR9-lL-2gv" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kR9-lL-2gv" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="50"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
@@ -609,7 +609,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmX-7M-XnS" customClass="DesignableTextField" customModule="Fun_Stress" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmX-7M-XnS" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="50"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
@@ -655,7 +655,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cee-Nb-3BO" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cee-Nb-3BO" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="132" y="0.0" width="150" height="50"/>
                                                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -704,8 +704,9 @@
         <segue reference="nby-Na-edh"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="appHomeIcon" width="150" height="150"/>
         <image name="checkmark" width="22" height="22"/>
+        <image name="launchLogo" width="100" height="100"/>
+        <image name="logo150" width="150" height="150"/>
         <image name="next" width="22" height="22"/>
         <image name="profile" width="100" height="100"/>
     </resources>

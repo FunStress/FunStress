@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BB764E1D28EAC5ACF5B9796 /* Pods_StressBuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E48F3CEBCE4884EDC866A9 /* Pods_StressBuster.framework */; };
+		2B9EA713CD875295F4E98129 /* Pods_StressBuster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24376BACCD16063786F64325 /* Pods_StressBuster.framework */; };
 		BC00EB9F23BB3F8D00C2232B /* ContactsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00EB9E23BB3F8D00C2232B /* ContactsHelper.swift */; };
 		BC033F6F23B9288F00F9534F /* CDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC033F6E23B9288F00F9534F /* CDManager.swift */; };
 		BC033F7323BB0E0F00F9534F /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC033F7223BB0E0F00F9534F /* UIImageView+Extensions.swift */; };
@@ -109,6 +109,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24376BACCD16063786F64325 /* Pods_StressBuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StressBuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF4C417E7B45609A3B006FC /* Pods-StressBuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.debug.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.debug.xcconfig"; sourceTree = "<group>"; };
+		BAECA15089832E39A7C9D6FF /* Pods-StressBuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.release.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.release.xcconfig"; sourceTree = "<group>"; };
 		BC00EB9E23BB3F8D00C2232B /* ContactsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsHelper.swift; sourceTree = "<group>"; };
 		BC033F6E23B9288F00F9534F /* CDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDManager.swift; sourceTree = "<group>"; };
 		BC033F7223BB0E0F00F9534F /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
@@ -211,9 +214,6 @@
 		BCEFA390244C025900B85985 /* CurrentFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFriendsVC.swift; sourceTree = "<group>"; };
 		BCEFA392244C0A4B00B85985 /* CurrentFriendTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFriendTVCell.swift; sourceTree = "<group>"; };
 		BCF1FA422452A57600F289D7 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		BCFCC53DC00A142B47B98B73 /* Pods-StressBuster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.release.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.release.xcconfig"; sourceTree = "<group>"; };
-		D022D81C5A3E3C71AC820127 /* Pods-StressBuster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StressBuster.debug.xcconfig"; path = "Target Support Files/Pods-StressBuster/Pods-StressBuster.debug.xcconfig"; sourceTree = "<group>"; };
-		E6E48F3CEBCE4884EDC866A9 /* Pods_StressBuster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StressBuster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC4EDE3723ACF63700E673C5 /* MapKit.framework in Frameworks */,
-				8BB764E1D28EAC5ACF5B9796 /* Pods_StressBuster.framework in Frameworks */,
+				2B9EA713CD875295F4E98129 /* Pods_StressBuster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,8 +232,8 @@
 		0B9200E556E9DBB2D846240F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D022D81C5A3E3C71AC820127 /* Pods-StressBuster.debug.xcconfig */,
-				BCFCC53DC00A142B47B98B73 /* Pods-StressBuster.release.xcconfig */,
+				9EF4C417E7B45609A3B006FC /* Pods-StressBuster.debug.xcconfig */,
+				BAECA15089832E39A7C9D6FF /* Pods-StressBuster.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 			children = (
 				BC4EDE3623ACF63700E673C5 /* MapKit.framework */,
 				BC4EDE2623ABA89300E673C5 /* FlagPhoneNumber.bundle */,
-				E6E48F3CEBCE4884EDC866A9 /* Pods_StressBuster.framework */,
+				24376BACCD16063786F64325 /* Pods_StressBuster.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -587,11 +587,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCBCEE2D23A6566D0013E66B /* Build configuration list for PBXNativeTarget "StressBuster" */;
 			buildPhases = (
-				3D1ADFDDAA9E98203F7BCF64 /* [CP] Check Pods Manifest.lock */,
+				3115FA01AE21D5F2FF39AB13 /* [CP] Check Pods Manifest.lock */,
 				BCBCEE1223A6566C0013E66B /* Sources */,
 				BCBCEE1323A6566C0013E66B /* Frameworks */,
 				BCBCEE1423A6566C0013E66B /* Resources */,
-				27A08EA6829D961FACA83BBA /* [CP] Embed Pods Frameworks */,
+				FDCA9ACEA6F1AE613E4BD613 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -676,24 +676,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27A08EA6829D961FACA83BBA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D1ADFDDAA9E98203F7BCF64 /* [CP] Check Pods Manifest.lock */ = {
+		3115FA01AE21D5F2FF39AB13 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -713,6 +696,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCA9ACEA6F1AE613E4BD613 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StressBuster/Pods-StressBuster-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -922,13 +922,13 @@
 		};
 		BCBCEE2E23A6566D0013E66B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D022D81C5A3E3C71AC820127 /* Pods-StressBuster.debug.xcconfig */;
+			baseConfigurationReference = 9EF4C417E7B45609A3B006FC /* Pods-StressBuster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "StressBuster/Stress Buster.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 6RNV8J8H5H;
 				INFOPLIST_FILE = StressBuster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -936,7 +936,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.12;
+				MARKETING_VERSION = 1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stressbusterapp.StressBuster;
 				PRODUCT_NAME = Tusic;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -947,13 +947,13 @@
 		};
 		BCBCEE2F23A6566D0013E66B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCFCC53DC00A142B47B98B73 /* Pods-StressBuster.release.xcconfig */;
+			baseConfigurationReference = BAECA15089832E39A7C9D6FF /* Pods-StressBuster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "StressBuster/Stress Buster.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 6RNV8J8H5H;
 				INFOPLIST_FILE = StressBuster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -961,7 +961,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.12;
+				MARKETING_VERSION = 1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stressbusterapp.StressBuster;
 				PRODUCT_NAME = Tusic;
 				PROVISIONING_PROFILE_SPECIFIER = "";

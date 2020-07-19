@@ -119,7 +119,11 @@ extension SearchMusicVC: UITableViewDelegate, UITableViewDataSource {
             let music = self.allMusicTracks[indexPath.row]
             cell.configureCell(music)
             
-            
+            if (indexPath == selectedIndexPath) {
+                cell.playImgView.image = UIImage(named: "pauseIcon")
+            } else {
+                cell.playImgView.image = UIImage(named: "playIcon")
+            }
             
             return cell
         } else {
@@ -134,12 +138,10 @@ extension SearchMusicVC: UITableViewDelegate, UITableViewDataSource {
             
             if (cell.playImgView.image == UIImage(named: "playIcon")) {
                 self.selectedMusic = music
-                cell.backgroundColor = #colorLiteral(red: 0.9568627451, green: 0.9568627451, blue: 0.9568627451, alpha: 1)
                 cell.playImgView.image = UIImage(named: "pauseIcon")
                 SoundsHelper.shared.playSound(urlString: music.previewUrl ?? "")
             } else {
                 self.selectedMusic = nil
-                cell.backgroundColor = UIColor.white
                 cell.playImgView.image = UIImage(named: "playIcon")
                 SoundsHelper.shared.stopSound(urlString: music.previewUrl ?? "")
             }

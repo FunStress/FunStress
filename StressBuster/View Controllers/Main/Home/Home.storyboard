@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="-84.057971014492765" y="-40.178571428571423"/>
         </scene>
-        <!--Fun Stress-->
+        <!--Tusic-->
         <scene sceneID="jZc-X6-QsG">
             <objects>
-                <viewController id="JCx-fd-IBp" customClass="HomeVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JCx-fd-IBp" customClass="HomeVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hNZ-yo-A1L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IU9-7n-Hq2">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZ4-f1-Jxf" customClass="DesignableView" customModule="Fun_Stress" customModuleProvider="target">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZ4-f1-Jxf" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="20" y="20" width="374" height="734"/>
                                         <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <userDefinedRuntimeAttributes>
@@ -105,7 +105,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DmN-eH-c29"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Fun Stress" largeTitleDisplayMode="never" id="klU-MP-rb8">
+                    <navigationItem key="navigationItem" title="Tusic" largeTitleDisplayMode="never" id="klU-MP-rb8">
                         <barButtonItem key="rightBarButtonItem" image="questionmark.circle" catalog="system" id="HLW-US-cRV">
                             <connections>
                                 <segue destination="6GE-cE-kwH" kind="show" id="7z2-Y8-HTa"/>
@@ -124,22 +124,42 @@
         <!--Guide-->
         <scene sceneID="3Y9-1h-sM6">
             <objects>
-                <viewController id="6GE-cE-kwH" customClass="HelpVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6GE-cE-kwH" customClass="HelpVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QFR-DQ-VOQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaD-GZ-cef">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="966"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cR-KU-JC2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1030"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BPR-Sx-u5Q">
-                                                <rect key="frame" x="28" y="20" width="358" height="443.5"/>
+                                                <rect key="frame" x="28" y="20" width="358" height="708.5"/>
                                                 <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="sD4-HP-v0b">
+                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="245"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Introduction" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDR-dg-m2X">
+                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="24"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ4-zq-IAM">
+                                                                <rect key="frame" x="0.0" y="29" width="358" height="216"/>
+                                                                <string key="text">Coronavirus has been shaking the world. We know that it may be a stressful time for everyone. In order to release people’s stress, we created Tusic! Tusic is a fun, interactive way to text your friends different snip-it’s of music from any language in the world whenever they feel stressed and vice versa.  In addition, you could also “text” your friends with music just for fun.
+
+This app has alert system when you stressed to a group or individuals.</string>
+                                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Evo-2a-JhP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="107.5"/>
+                                                        <rect key="frame" x="0.0" y="265" width="358" height="107.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="What to do?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xR-AD-Xas">
                                                                 <rect key="frame" x="0.0" y="0.0" width="358" height="24"/>
@@ -156,26 +176,8 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-HI-y8r">
-                                                        <rect key="frame" x="0.0" y="127.5" width="358" height="107.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="What to Expect?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8i-zf-WJV">
-                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="24"/>
-                                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yl2-kn-ozf">
-                                                                <rect key="frame" x="0.0" y="29" width="358" height="78.5"/>
-                                                                <string key="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</string>
-                                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Fpr-La-r3P">
-                                                        <rect key="frame" x="0.0" y="255" width="358" height="107.5"/>
+                                                        <rect key="frame" x="0.0" y="392.5" width="358" height="107.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="All Features Included!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVJ-q7-3hB">
                                                                 <rect key="frame" x="0.0" y="0.0" width="358" height="24"/>
@@ -192,8 +194,26 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8Ae-Uv-XU1">
+                                                        <rect key="frame" x="0.0" y="520" width="358" height="107.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Other  Features Included!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6P-ZL-fsv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="358" height="24"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjf-az-5a9">
+                                                                <rect key="frame" x="0.0" y="29" width="358" height="78.5"/>
+                                                                <string key="text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</string>
+                                                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cy3-bu-24W">
-                                                        <rect key="frame" x="0.0" y="382.5" width="358" height="61"/>
+                                                        <rect key="frame" x="0.0" y="647.5" width="358" height="61"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Contact Details" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1h-bf-tOh">
                                                                 <rect key="frame" x="0.0" y="0.0" width="358" height="24"/>
@@ -208,16 +228,15 @@
                                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <action selector="contactDetailsBtnPressed:" destination="6GE-cE-kwH" eventType="touchUpInside" id="LAe-vW-0w3"/>
-                                                                    <action selector="contactDetailsBtnPressed:" destination="JCx-fd-IBp" eventType="touchUpInside" id="Q6m-st-lnR"/>
+                                                                    <action selector="contactDetailsBtnPressed:" destination="6GE-cE-kwH" eventType="touchUpInside" id="vHs-xF-1Df"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anj-rd-Jam" customClass="DesignableButton" customModule="Fun_Stress" customModuleProvider="target">
-                                                <rect key="frame" x="107" y="493.5" width="200" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anj-rd-Jam" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
+                                                <rect key="frame" x="107" y="758.5" width="200" height="40"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="czA-gn-W2R"/>
@@ -237,7 +256,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JzQ-Sx-xim">
-                                                <rect key="frame" x="8" y="563.5" width="398" height="45"/>
+                                                <rect key="frame" x="8" y="828.5" width="398" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fun Stress" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sX5-e2-gms">
                                                         <rect key="frame" x="0.0" y="0.0" width="398" height="18.5"/>
@@ -263,7 +282,7 @@
                                             <constraint firstItem="JzQ-Sx-xim" firstAttribute="top" secondItem="anj-rd-Jam" secondAttribute="bottom" constant="30" id="Qhj-HY-v0D"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="JzQ-Sx-xim" secondAttribute="trailing" id="b6m-u6-vgm"/>
                                             <constraint firstItem="anj-rd-Jam" firstAttribute="top" secondItem="BPR-Sx-u5Q" secondAttribute="bottom" constant="30" id="bb4-Qo-EYD"/>
-                                            <constraint firstAttribute="height" constant="1030" id="fUX-f5-uIg"/>
+                                            <constraint firstAttribute="height" constant="1500" id="fUX-f5-uIg"/>
                                             <constraint firstItem="JzQ-Sx-xim" firstAttribute="leading" secondItem="0cR-KU-JC2" secondAttribute="leadingMargin" id="wpV-tq-zjQ"/>
                                         </constraints>
                                     </view>
@@ -290,13 +309,15 @@
                         <viewLayoutGuide key="safeArea" id="b5K-HB-8rG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Guide" id="hWZ-ah-iOt"/>
+                    <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="allFeaturesIncludedLbl" destination="gv0-k3-Odj" id="SFG-YL-TXa"/>
                         <outlet property="contactDetailsBtn" destination="f39-88-RpI" id="Tex-DQ-sD7"/>
+                        <outlet property="introLbl" destination="mZ4-zq-IAM" id="6La-fE-t9M"/>
+                        <outlet property="otherFeaturesIncludedLbl" destination="sjf-az-5a9" id="Jm1-DO-t1d"/>
                         <outlet property="rateAppBtn" destination="anj-rd-Jam" id="xzz-tN-SHx"/>
                         <outlet property="versionLbl" destination="hBk-bY-SkB" id="2of-gg-8SA"/>
                         <outlet property="whatToDoLbl" destination="bFX-Fo-CBL" id="c6e-pV-9LE"/>
-                        <outlet property="whatToExpectLbl" destination="Yl2-kn-ozf" id="nH4-7n-HA2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B2S-2V-FMT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

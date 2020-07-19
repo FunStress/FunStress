@@ -12,9 +12,10 @@ import MessageUI
 class HelpVC: UIViewController {
     
     // MARK: - Outlets
+    @IBOutlet weak var introLbl: UILabel!
     @IBOutlet weak var whatToDoLbl: UILabel!
-    @IBOutlet weak var whatToExpectLbl: UILabel!
     @IBOutlet weak var allFeaturesIncludedLbl: UILabel!
+    @IBOutlet weak var otherFeaturesIncludedLbl: UILabel!
     @IBOutlet weak var contactDetailsBtn: UIButton!
     @IBOutlet weak var versionLbl: UILabel!
     @IBOutlet weak var rateAppBtn: UIButton!
@@ -23,15 +24,18 @@ class HelpVC: UIViewController {
     let mailComposerVC = MFMailComposeViewController()
     
     // MARK: - Stored Properties
+    let intrductionHTML = """
+                            Coronavirus has been shaking the world. We know that it may be a stressful time for everyone. In order to release people’s stress, we created Tusic! Tusic is a fun, interactive way to text your friends different snip-it’s of music from any language in the world whenever they feel stressed and vice versa.  In addition, you could also “text” your friends with music just for fun./n This app has alert system when you stressed to a group or individuals
+                          """
     let whatToDoHTML = """
-                            <ul><li>Inform your friends about 'Fun Stress' app and ask them to register.</li><li>Add friends by sending request from list of contacts in your phone book.</li><li>Once your friends accept your request, you are allowed to create a New Group.</li><li>Create new group with name, description, avatar and add friends.</li><li>Anyone can edit the group details at any time.</li></ul>
-                            """
-    let whatToExpectHTML = """
-                                <ul><li>Once the group is created, you are allowed to send your favorite sample music tracks to all and also you can inform the group if you are feeling stressed.</li><li>Entire group is alerted about the stressed friend and allows others to send variety of music samples via the group.</li><li>Current stressed friend value is overridden if any other friend in the group is feeling stressed.</li><li>Stressed friend value will last upto 8 hours, after the group won't have any stressed friend unless someone alerts the group.</li></ul>
-                            """
+                        <ul><li>Download the app by searching up “Tusic” on the App Store</li><li>Inform your friends about the “Tusic” app and ask them to download and make an account</li><li>Add your fellow friends that downloaded the app by sending them a request from the list of contacts from your phone book</li><li>After your friends accept the request, form a group together</li>Create a name, description, and an avatar for your group. Choose from a wide variety of avatars!</li><li>Anyone part of the group can edit the group details any time.</li><li>Start texting some music!!</li></ul>
+                        """
     let allFeatureIncludedHTML = """
-                                        <ul><li>Selection of wide variety of avatars for your account and Group profile pictures.</li><li>Updating the group details and profiel information anytime except the phone number that is used at the registration time</li><li>Sample music track selection has a reach of 100 tracks, play and send any.</li></ul>
+                                    <ul><li>In the Home page, there’s a smiley face button that says “Press Me” that will play a funny tune to alleviate your stress</li><li>There’s a “I’m Stressed” button that allows you to send a notification to your friends whenever you feel stressed</li><li>You will be notified if your friend is stressed with a catchy notification tune or vice versa</li><li>You can chat with music with a group of friends by sending different kinds of music with one another, whether your stressed or not stressed, by clicking on the “Send Music” button</li><li>Current friend that is stressed is overridden if another friend from the same group becomes stressed. The stressed friend value with only last up to 8 hrs. After that, there won’t be any stressed friends unless someone alerts the group</li></ul>
                                     """
+    let otherFeatureIncludedHTML = """
+                                    <ul><li>You are able to send a wide variety of music tracks from around the world to all your group members for fun</li><li>Sample music track selection has a reach of 100 tracks</li><li>You can either upload any of the provided avatars for your account profile or group</li><ul>
+                                   """
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +50,8 @@ class HelpVC: UIViewController {
     
     fileprivate func configureUI() {
         self.whatToDoLbl.text = whatToDoHTML.htmlToString
-        self.whatToExpectLbl.text = whatToExpectHTML.htmlToString
         self.allFeaturesIncludedLbl.text = allFeatureIncludedHTML.htmlToString
+        self.otherFeaturesIncludedLbl.text = otherFeatureIncludedHTML.htmlToString
         
         // MARK: - Normal Text
         let mutableTitleString = NSMutableAttributedString()
