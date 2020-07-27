@@ -8,6 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
         <array key="Poppins-Light.ttf">
             <string>Poppins-Light</string>
         </array>
@@ -55,9 +58,68 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IU9-7n-Hq2">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btO-vn-vz7" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="374" height="734"/>
+                                        <color key="backgroundColor" red="1" green="0.92156862750000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZ4-f1-Jxf" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="20" y="20" width="374" height="734"/>
-                                        <color key="backgroundColor" red="1" green="0.92156862745098034" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnTitle" translatesAutoresizingMaskIntoConstraints="NO" id="8ge-A5-stA">
+                                                <rect key="frame" x="107" y="554" width="160" height="160"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="160" id="2k0-S9-lIf"/>
+                                                    <constraint firstAttribute="width" constant="160" id="mgB-84-fii"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji_1" translatesAutoresizingMaskIntoConstraints="NO" id="hb0-iw-FGF">
+                                                <rect key="frame" x="137" y="579" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="TYu-Cf-iAT"/>
+                                                    <constraint firstAttribute="height" constant="100" id="vfA-Tc-uXp"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's talk with Music !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlP-OS-iQs">
+                                                <rect key="frame" x="20" y="484" width="334" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Whs-S5-DID"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emoji" translatesAutoresizingMaskIntoConstraints="NO" id="Xoa-Ac-929">
+                                                <rect key="frame" x="10" y="30" width="354" height="434"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Xoa-Ac-929" firstAttribute="top" secondItem="tZ4-f1-Jxf" secondAttribute="top" constant="30" id="1SM-xQ-hzp"/>
+                                            <constraint firstItem="8ge-A5-stA" firstAttribute="centerX" secondItem="tZ4-f1-Jxf" secondAttribute="centerX" id="DBU-uX-Dsh"/>
+                                            <constraint firstItem="Xoa-Ac-929" firstAttribute="leading" secondItem="tZ4-f1-Jxf" secondAttribute="leading" constant="10" id="FT0-X0-Htr"/>
+                                            <constraint firstItem="OlP-OS-iQs" firstAttribute="top" secondItem="Xoa-Ac-929" secondAttribute="bottom" constant="20" id="JpD-Ys-a5e"/>
+                                            <constraint firstItem="OlP-OS-iQs" firstAttribute="leading" secondItem="tZ4-f1-Jxf" secondAttribute="leading" constant="20" id="UOx-XB-SaF"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xoa-Ac-929" secondAttribute="trailing" constant="10" id="Xow-Td-Jm6"/>
+                                            <constraint firstItem="hb0-iw-FGF" firstAttribute="centerY" secondItem="8ge-A5-stA" secondAttribute="centerY" constant="-5" id="Zmg-JM-D1B"/>
+                                            <constraint firstAttribute="bottom" secondItem="8ge-A5-stA" secondAttribute="bottom" constant="20" id="aPY-W6-9VE"/>
+                                            <constraint firstAttribute="trailing" secondItem="OlP-OS-iQs" secondAttribute="trailing" constant="20" id="e6h-oK-H1j"/>
+                                            <constraint firstItem="hb0-iw-FGF" firstAttribute="centerX" secondItem="8ge-A5-stA" secondAttribute="centerX" id="hhp-sS-GY3"/>
+                                            <constraint firstItem="8ge-A5-stA" firstAttribute="top" secondItem="OlP-OS-iQs" secondAttribute="bottom" constant="30" id="tJu-gq-Rhz"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -73,24 +135,15 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyz-nm-bCl">
-                                        <rect key="frame" x="169.5" y="659" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="lgN-r4-1wG"/>
-                                            <constraint firstAttribute="height" constant="75" id="rR8-Ii-t2Q"/>
-                                        </constraints>
-                                        <state key="normal" image="playHomeBtn"/>
-                                        <connections>
-                                            <action selector="playBtnPressed:" destination="JCx-fd-IBp" eventType="touchUpInside" id="NYG-83-KZU"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="tZ4-f1-Jxf" firstAttribute="top" secondItem="IU9-7n-Hq2" secondAttribute="top" constant="20" id="1GL-JL-rEk"/>
-                                    <constraint firstAttribute="bottom" secondItem="Iyz-nm-bCl" secondAttribute="bottom" constant="40" id="DiV-FM-9y2"/>
+                                    <constraint firstAttribute="bottom" secondItem="btO-vn-vz7" secondAttribute="bottom" constant="20" id="VlC-lt-7Aa"/>
+                                    <constraint firstAttribute="trailing" secondItem="btO-vn-vz7" secondAttribute="trailing" constant="20" id="WwO-8U-Mcb"/>
                                     <constraint firstAttribute="trailing" secondItem="tZ4-f1-Jxf" secondAttribute="trailing" constant="20" id="YOl-Hx-m77"/>
-                                    <constraint firstItem="Iyz-nm-bCl" firstAttribute="centerX" secondItem="IU9-7n-Hq2" secondAttribute="centerX" id="eTi-CI-wWK"/>
+                                    <constraint firstItem="btO-vn-vz7" firstAttribute="top" secondItem="IU9-7n-Hq2" secondAttribute="top" constant="20" id="cDH-xp-Tr6"/>
+                                    <constraint firstItem="btO-vn-vz7" firstAttribute="leading" secondItem="IU9-7n-Hq2" secondAttribute="leading" constant="20" id="jfQ-kj-cXD"/>
                                     <constraint firstItem="tZ4-f1-Jxf" firstAttribute="leading" secondItem="IU9-7n-Hq2" secondAttribute="leading" constant="20" id="mLi-dc-cSu"/>
                                     <constraint firstAttribute="bottom" secondItem="tZ4-f1-Jxf" secondAttribute="bottom" constant="20" id="sQl-qH-0OI"/>
                                 </constraints>
@@ -113,8 +166,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="homeAnimationView" destination="tZ4-f1-Jxf" id="VbL-uU-76g"/>
-                        <outlet property="playBtn" destination="Iyz-nm-bCl" id="SLz-Gb-Cdj"/>
+                        <outlet property="emojiImgView" destination="hb0-iw-FGF" id="Izr-ZB-KiI"/>
+                        <outlet property="homeAnimationView" destination="btO-vn-vz7" id="a4m-09-Oyt"/>
+                        <outlet property="mainEmojiImgView" destination="Xoa-Ac-929" id="oGm-Rb-KQS"/>
+                        <outlet property="titleImgView" destination="8ge-A5-stA" id="hnL-LC-sa9"/>
+                        <outlet property="titleLbl" destination="OlP-OS-iQs" id="1g8-vt-VGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sjF-Uq-rd6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -326,8 +382,10 @@ This app has alert system when you stressed to a group or individuals.</string>
         </scene>
     </scenes>
     <resources>
+        <image name="btnTitle" width="120" height="145.5"/>
+        <image name="emoji" width="326" height="335.5"/>
+        <image name="emoji_1" width="100" height="100"/>
         <image name="music.house.fill" catalog="system" width="128" height="106"/>
-        <image name="playHomeBtn" width="75" height="75"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="rating" width="22" height="22"/>
     </resources>

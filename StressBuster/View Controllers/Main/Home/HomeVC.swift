@@ -13,10 +13,20 @@ class HomeVC: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var homeAnimationView: UIView!
-    @IBOutlet weak var playBtn: UIButton!
+    @IBOutlet weak var mainEmojiImgView: UIImageView!
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var titleImgView: UIImageView!
+    @IBOutlet weak var emojiImgView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let emojiBtnTapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture))
+        emojiImgView.addGestureRecognizer(emojiBtnTapGesture)
+        
+        mainEmojiImgView.isHidden = true
+        titleImgView.isHidden = true
+        titleLbl.isHidden = true
         
         self.makeBubbles()
     }
@@ -27,53 +37,37 @@ class HomeVC: UIViewController {
         emitter.emitterSize = CGSize(width: homeAnimationView.frame.width * 0.75, height: 2)
         homeAnimationView.layer.addSublayer(emitter)
         
-        let emojiImage = UIImage(named: "emoji_1")
-        let emojiImageView:UIImageView = UIImageView()
-        emojiImageView.contentMode = UIView.ContentMode.scaleAspectFit
-        emojiImageView.frame.size.width = 150
-        emojiImageView.frame.size.height = 150
-        emojiImageView.center.x = self.homeAnimationView.center.x - 15.0
-        emojiImageView.center.y = self.homeAnimationView.center.y - 40.0
-        emojiImageView.image = emojiImage
+        mainEmojiImgView.isHidden = false
+        titleLbl.isHidden = false
+        titleImgView.isHidden = false
         
-        self.homeAnimationView.addSubview(emojiImageView)
-        
-        emojiImageView.animationImages = [#imageLiteral(resourceName: "emoji_1"), #imageLiteral(resourceName: "emoji_2"), #imageLiteral(resourceName: "emoji_3"), #imageLiteral(resourceName: "emoji_4"), #imageLiteral(resourceName: "emoji_5")]
-        emojiImageView.animationDuration = 1.5
-        emojiImageView.startAnimating()
-        
-        playBtn.isHidden = true
-        
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3), execute: { () -> Void in
-            UIView.animate(withDuration: 0.4, animations: { () -> Void in
-                emojiImageView.center.y = self.homeAnimationView.center.y - 100.0
-                self.playBtn.isHidden = false
-            })
-        })
+        emojiImgView.animationImages = [#imageLiteral(resourceName: "emoji_1"), #imageLiteral(resourceName: "emoji_2"), #imageLiteral(resourceName: "emoji_3"), #imageLiteral(resourceName: "emoji_4"), #imageLiteral(resourceName: "emoji_5")]
+        emojiImgView.animationDuration = 1.5
+        emojiImgView.startAnimating()
+    }
+    
+    @objc func handleTapGesture() {
+        SoundsHelper.shared.playSoundFromResources(soundName: "frustration")
     }
     
     @IBAction func playBtnPressed(_ sender: UIButton) {
         if (sender.imageView?.image == UIImage(named: "playHomeBtn")) {
             SoundsHelper.shared.playSoundFromResources(soundName: "frustration")
-            self.playBtn.setImage(UIImage(named: "pauseHomeBtn"), for: .normal)
+//            self.playBtn.setImage(UIImage(named: "pauseHomeBtn"), for: .normal)
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(37), execute: { () -> Void in
                 UIView.animate(withDuration: 0.4, animations: { () -> Void in
-                    self.playBtn.setImage(UIImage(named: "playHomeBtn"), for: .normal)
+//                    self.playBtn.setImage(UIImage(named: "playHomeBtn"), for: .normal)
                 })
             })
         } else {
             SoundsHelper.shared.stopSoundFromResources(soundName: "frustration")
-            self.playBtn.setImage(UIImage(named: "playHomeBtn"), for: .normal)
+//            self.playBtn.setImage(UIImage(named: "playHomeBtn"), for: .normal)
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(37), execute: { () -> Void in
                 UIView.animate(withDuration: 0.4, animations: { () -> Void in
-                    self.playBtn.setImage(UIImage(named: "playHomeBtn"), for: .normal)
+//                    self.playBtn.setImage(UIImage(named: "playHomeBtn"), for: .normal)
                 })
             })
         }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
