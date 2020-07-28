@@ -35,6 +35,7 @@
 		BC7B01B1244C107B003AF516 /* UserProfile+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B01AF244C107B003AF516 /* UserProfile+CoreDataProperties copy.swift */; };
 		BC85117424454F9A00B80A9C /* MusicTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC85117324454F9A00B80A9C /* MusicTVCell.swift */; };
 		BC8620E7248B38970045C52B /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8620E6248B38970045C52B /* HelpVC.swift */; };
+		BC9412C224CFEF040065D94D /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9412C124CFEF040065D94D /* Functions.swift */; };
 		BC985A13244B3B32001493B6 /* AddFriendsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC985A12244B3B32001493B6 /* AddFriendsTVCell.swift */; };
 		BC985A15244B3B56001493B6 /* AddFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC985A14244B3B56001493B6 /* AddFriendsVC.swift */; };
 		BC9C93052445612E0083F25B /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9C93042445612E0083F25B /* MusicService.swift */; };
@@ -141,6 +142,7 @@
 		BC7B01AF244C107B003AF516 /* UserProfile+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserProfile+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
 		BC85117324454F9A00B80A9C /* MusicTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTVCell.swift; sourceTree = "<group>"; };
 		BC8620E6248B38970045C52B /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		BC9412C124CFEF040065D94D /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		BC985A12244B3B32001493B6 /* AddFriendsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsTVCell.swift; sourceTree = "<group>"; };
 		BC985A14244B3B56001493B6 /* AddFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsVC.swift; sourceTree = "<group>"; };
 		BC9C93042445612E0083F25B /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
@@ -299,6 +301,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		BC9412C024CFEEEA0065D94D /* Backend Functions */ = {
+			isa = PBXGroup;
+			children = (
+				BC9412C124CFEF040065D94D /* Functions.swift */,
+			);
+			path = "Backend Functions";
+			sourceTree = "<group>";
+		};
 		BCBCEE0D23A6566C0013E66B = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +333,7 @@
 				BC42F00423B54A5C0097E42C /* Stress Buster.entitlements */,
 				BCECB57323B69F7D002BC808 /* GoogleService-Info.plist */,
 				BCBCEE2A23A6566D0013E66B /* Info.plist */,
+				BC9412C024CFEEEA0065D94D /* Backend Functions */,
 				BCBCEE3623A65CEB0013E66B /* UI Elements */,
 				BCBCEE3123A658880013E66B /* App */,
 				BCBCEE3023A6587A0013E66B /* Resources */,
@@ -733,6 +744,7 @@
 				BC22D77523F883F200E8ED1F /* UnfriendAlertVC.swift in Sources */,
 				BC8620E7248B38970045C52B /* HelpVC.swift in Sources */,
 				BCBF0C712441F37200F4B88E /* MainTabBarVC.swift in Sources */,
+				BC9412C224CFEF040065D94D /* Functions.swift in Sources */,
 				BC4EDE2C23ABAE5200E673C5 /* CountryCodeHelper.swift in Sources */,
 				BC387F962453054C006B920F /* AddMembersToGroup.swift in Sources */,
 				BC07174924479EEE0092CADC /* Date+Extensions.swift in Sources */,
