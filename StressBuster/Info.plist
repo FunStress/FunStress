@@ -34,11 +34,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>StressBuster wants to access your camera to set up your profile picture.</string>
+	<string>Tusic wants to access your camera to set up your profile picture.</string>
 	<key>NSContactsUsageDescription</key>
-	<string>StressBuster wants to access your contacts.</string>
+	<string>Tusic wants to access your contacts.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>StressBuster wants to access your photo library to set up your profile picture.</string>
+	<string>Tusic wants to access your photo library to set up your profile picture.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>

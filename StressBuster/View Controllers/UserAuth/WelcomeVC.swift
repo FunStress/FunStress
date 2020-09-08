@@ -35,4 +35,12 @@ class WelcomeVC: UIViewController {
     @IBAction func registerBtnPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: REGISTER_NOW_SEGUE, sender: nil)
     }
+    
+    @IBAction func privacyPolicyBtnPressed(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "PrivacyPolicy", bundle: nil)
+        let privacyPolicyVC = storyBoard.instantiateViewController(withIdentifier: "privacyPolicyVC") as! PrivacyPolicyVC
+        privacyPolicyVC.title = "Privacy Policy"
+        privacyPolicyVC.modalPresentationStyle = .overCurrentContext
+        self.navigationController?.pushViewController(privacyPolicyVC, animated: true)
+    }
 }

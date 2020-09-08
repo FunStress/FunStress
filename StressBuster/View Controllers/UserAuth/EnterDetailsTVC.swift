@@ -13,7 +13,9 @@ class EnterDetailsTVC: UITableViewController {
     // MARK: - Outlets
     @IBOutlet weak var firstNameTxtFld: UITextField!
     @IBOutlet weak var lastNameTxtFld: UITextField!
-    @IBOutlet weak var emailTxtField: UITextField!
+    @IBOutlet weak var emailTxtFld: UITextField!
+    @IBOutlet weak var agreementsImgView: UIImageView!
+    @IBOutlet weak var agreementsBtn: UIButton!
     @IBOutlet weak var saveBtn: UIButton!
     @IBOutlet weak var avatarCollectionView: UICollectionView!
     
@@ -25,6 +27,17 @@ class EnterDetailsTVC: UITableViewController {
         super.viewDidLoad()
         
         tableView.keyboardDismissMode = .onDrag
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleCheckBoxTap))
+        agreementsImgView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func handleCheckBoxTap() {
+        if (agreementsImgView.image == UIImage(named: "uncheckboxIcon")) {
+            agreementsImgView.image = UIImage(named: "checkboxIcon")
+        } else {
+            agreementsImgView.image = UIImage(named: "uncheckboxIcon")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,6 +45,25 @@ class EnterDetailsTVC: UITableViewController {
         
         self.firstNameTxtFld.becomeFirstResponder()
         self.loadAvatars()
+        self.agreementsImgView.image = UIImage(named: "uncheckboxIcon")
+        
+        let attrs: [NSAttributedString.Key : Any] = [
+            NSAttributedString.Key.font : UIFont(name: "Poppins", size: 17.0)!,
+            NSAttributedString.Key.foregroundColor : UIColor.black]
+
+        let blueAttrs: [NSAttributedString.Key : Any] = [
+        NSAttributedString.Key.font : UIFont(name: "Poppins", size: 17.0)!,
+        NSAttributedString.Key.foregroundColor : UIColor.blue,
+        NSAttributedString.Key.underlineStyle : 1]
+
+        let attributedString = NSMutableAttributedString(string:"")
+
+        let generalStr = NSMutableAttributedString(string: "I accept the ", attributes: attrs)
+        let underlineStr = NSMutableAttributedString(string: "Agreements", attributes: blueAttrs)
+        attributedString.append(generalStr)
+        attributedString.append(underlineStr)
+        agreementsBtn.setAttributedTitle(attributedString, for: .normal)
+        
         self.saveBtn.setImageAndTitle()
     }
     
@@ -63,7 +95,7 @@ class EnterDetailsTVC: UITableViewController {
             return
         }
         
-        FirebaseData.shared.saveCurrentUserData(firstName: self.firstNameTxtFld.text ?? "", lastName: self.lastNameTxtFld.text ?? "", email: self.emailTxtField.text ?? "", avatar: self.selectedAvatarName, phoneNumber: phoneNumber) { (success, error) in
+        FirebaseData.shared.saveCurrentUserData(firstName: self.firstNameTxtFld.text ?? "", lastName: self.lastNameTxtFld.text ?? "", email: self.emailTxtFld.text ?? "", avatar: self.selectedAvatarName, phoneNumber: phoneNumber) { (success, error) in
             if (error != nil) {
                 self.presentErrorAlert(errorMessage: "Something went wrong, please try again after sometime.")
             } else {
@@ -94,8 +126,12 @@ class EnterDetailsTVC: UITableViewController {
             return "Invalid Last Name !"
         }
         
-        if let email = self.emailTxtField.text, email.isEmpty {
+        if let email = self.emailTxtFld.text, email.isEmpty {
             return "Invalid Email !"
+        }
+        
+        if (agreementsImgView.image == UIImage(named: "uncheckboxIcon")) {
+            return "Please accept the Terms & Conditions !"
         }
         
         return ""

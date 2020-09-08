@@ -8,6 +8,7 @@
 
 import Foundation
 import Firebase
+import FirebaseAuth
 import FirebaseDatabase
 
 public final class FirebaseData {
@@ -21,19 +22,19 @@ public final class FirebaseData {
     // MARK: - Save User to Database
     func saveCurrentUserData(firstName: String, lastName: String, email: String, avatar: String, phoneNumber: String, onCompletion: @escaping(_ success: Bool, _ error: Error?) -> Void) {
         
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(false, nil)
             return
         }
         
-        let userData: [String: Any] = ["id": currentUser.uid,
+        let userData: [String: Any] = ["id": userId,
                         "firstName": firstName,
                         "lastName": lastName,
                         "email": email,
                         "avatar": avatar,
                         "phoneNumber": phoneNumber]
         
-        databaseRef.child("users").child(currentUser.uid).setValue(userData) {
+        databaseRef.child("users").child(userId).setValue(userData) {
             (error:Error?, ref:DatabaseReference) in
             if let error = error {
                 onCompletion(false, error)
@@ -45,12 +46,45 @@ public final class FirebaseData {
     
     // MARK: - Retrieve User Data from Database
     func retrieveCurrentUserData(onCompletion: @escaping(_ user: User?) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(nil)
             return
         }
         
-        databaseRef.child("users").child(currentUser.uid).observeSingleEvent(of: .value) { (snapshot) in
+        databaseRef.child("users").child(userId).observeSingleEvent(of: .value) { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            
+            let userId = value?["id"] as? String
+            let token = value?["deviceToken"] as? String
+            let firstName = value?["firstName"] as? String
+            let lastName = value?["lastName"] as? String
+            let email = value?["email"] as? String
+            let phoneNumber = value?["phoneNumber"] as? String
+            let avatar = value?["avatar"] as? String
+            
+            var friendsUserIds = [String]()
+            if let friendsDict = value?["friends"] as? [String: String] {
+                for (_, friendsUserId) in friendsDict {
+                    friendsUserIds.append(friendsUserId)
+                }
+            }
+            
+            var requestsUserIds = [String]()
+            if let requestsDict = value?["requests"] as? [String: String] {
+                for (_, requestUserId) in requestsDict {
+                    requestsUserIds.append(requestUserId)
+                }
+            }
+            
+            let userData = User(deviceToken: token, userId: userId, firstName: firstName, lastName: lastName, email: email, avatar: avatar, phoneNumber: phoneNumber, friendsIds: friendsUserIds, requestIds: requestsUserIds)
+            
+            onCompletion(userData)
+        }
+    }
+    
+    // MARK: - Retrieve test User Data from Database
+    func retrieveTestCurrentUserData(onCompletion: @escaping(_ user: User?) -> Void) {
+        databaseRef.child("users").child("5fG9jT111LRxu7000GrV898Ryw12").observeSingleEvent(of: .value) { (snapshot) in
             let value = snapshot.value as? NSDictionary
             
             let userId = value?["id"] as? String
@@ -147,12 +181,12 @@ public final class FirebaseData {
     
     // MARK: - Update User data
     func updateCurrentUserData(userValues: [String: Any], onCompletion: @escaping(_ success: Bool) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(false)
             return
         }
         
-        databaseRef.child("users").child(currentUser.uid).updateChildValues(userValues)
+        databaseRef.child("users").child(userId).updateChildValues(userValues)
         onCompletion(true)
     }
     
@@ -185,14 +219,14 @@ public final class FirebaseData {
     
     // MARK: - Send Friend Request to User and Receiver Database
     func sendRequest(receiverPhoneNumber: String, onCompletion: @escaping(_ success: Bool) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(false)
             return
         }
         
         self.isUserPresent(phoneNumber: receiverPhoneNumber) { (id) in
             if let userId = id, !userId.isEmpty {
-                self.databaseRef.child("users").child(userId).child("requests").child(currentUser.uid).setValue(currentUser.uid)
+                self.databaseRef.child("users").child(userId).child("requests").child(userId).setValue(userId)
                 onCompletion(true)
             } else {
                 onCompletion(false)
@@ -202,15 +236,15 @@ public final class FirebaseData {
     
     // MARK: - Confirm Friend Request
     func confirmRequest(receiverUserId: String, onCompletion: @escaping(_ success: Bool) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(false)
             return
         }
          
-        databaseRef.child("users").child(receiverUserId).child("friends").child(currentUser.uid).setValue(currentUser.uid) {
+        databaseRef.child("users").child(receiverUserId).child("friends").child(userId).setValue(userId) {
             (error:Error?, ref:DatabaseReference) in
             if (error == nil) {
-                self.databaseRef.child("users").child(currentUser.uid).child("friends").child(receiverUserId).setValue(receiverUserId)
+                self.databaseRef.child("users").child(userId).child("friends").child(receiverUserId).setValue(receiverUserId)
                 onCompletion(true)
             } else {
                 onCompletion(false)
@@ -220,14 +254,14 @@ public final class FirebaseData {
     
     // MARK: - Delete Friend Request
     func deleteSentRequest(receiverPhoneNumber: String, onCompletion: @escaping(_ success: Bool) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(false)
             return
         }
         
         self.isUserPresent(phoneNumber: receiverPhoneNumber) { (id) in
             if let userId = id, !userId.isEmpty {
-                let senderRequestRef = self.databaseRef.child("users").child(userId).child("requests").child(currentUser.uid)
+                let senderRequestRef = self.databaseRef.child("users").child(userId).child("requests").child(userId)
                 
                 senderRequestRef.removeValue { (error, _) in
                     if let err = error, err.localizedDescription != "" {
@@ -243,12 +277,12 @@ public final class FirebaseData {
     
     // MARK: - Delete Friend Request
     func deleteReceivedRequest(userId: String, onCompletion: @escaping(_ success: Bool) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(false)
             return
         }
         
-        let senderRequestRef = self.databaseRef.child("users").child(currentUser.uid).child("requests").child(userId)
+        let senderRequestRef = self.databaseRef.child("users").child(userId).child("requests").child(userId)
         
         senderRequestRef.removeValue { (error, _) in
             if let err = error, err.localizedDescription != "" {
@@ -278,12 +312,12 @@ public final class FirebaseData {
     
     // MARK: - Retrieve Friends With UserId
     func getFriendsByUser(onCompletion: @escaping(_ userIds: [String]?) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(nil)
             return
         }
         
-        self.databaseRef.child("users").child(currentUser.uid).child("friends").observeSingleEvent(of: .value) { (snapshot) in
+        self.databaseRef.child("users").child(userId).child("friends").observeSingleEvent(of: .value) { (snapshot) in
             var friends = [String]()
             if let friendsDict = snapshot.value as? NSDictionary {
                 for (_, friendsUserId) in friendsDict {
@@ -298,19 +332,19 @@ public final class FirebaseData {
     
     // MARK: - Delete Friend by User Id
     func unfriendCurrentUserFriend(userId: String, onCompletion: @escaping(_ success: Bool) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(false)
             return
         }
         
-        let currentUserRef = self.databaseRef.child("users").child(currentUser.uid).child("friends").child(userId)
+        let currentUserRef = self.databaseRef.child("users").child(userId).child("friends").child(userId)
         
         currentUserRef.removeValue { (error, _) in
             if let err = error, err.localizedDescription != "" {
                 onCompletion(false)
             }
             
-            let currentUserFreindsRef = self.databaseRef.child("users").child(userId).child("friends").child(currentUser.uid)
+            let currentUserFreindsRef = self.databaseRef.child("users").child(userId).child("friends").child(userId)
             
             currentUserFreindsRef.removeValue { (error, _) in
                 if let err = error, err.localizedDescription != "" {
@@ -323,12 +357,12 @@ public final class FirebaseData {
     
     // MARK: - Retrieve Friend Requests By UserId
     func getFriendRequests(onCompletion: @escaping(_ userIds: [String]?) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = CDManager.shared.retrieveUserData(), let userId = currentUser.userId, userId != "" else {
             onCompletion(nil)
             return
         }
         
-        self.databaseRef.child("users").child(currentUser.uid).child("requests").observeSingleEvent(of: .value) { (snapshot) in
+        self.databaseRef.child("users").child(userId).child("requests").observeSingleEvent(of: .value) { (snapshot) in
             var friends = [String]()
             if let requestsDict = snapshot.value as? NSDictionary {
                 for (_, statusValue) in requestsDict {

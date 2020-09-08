@@ -9,7 +9,10 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseCore
 import FirebaseMessaging
+import FirebaseInstanceID
+import FirebaseAuth
 import UserNotifications
 
 @UIApplicationMain
@@ -43,7 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         FirebaseApp.configure()
         
         // MARK: - User Check
-        if let user = Auth.auth().currentUser, user.uid != "" {
+        if let testUser = UserDefaults.standard.value(forKey: "TestUser") as? Bool, testUser {
+            self.presentHome()
+        } else if let user = Auth.auth().currentUser, user.uid != "" {
             if let remoteNotification = launchOptions?[UIApplication.LaunchOptionsKey.remoteNotification] as? NSDictionary {
                 if let userInfoDict = remoteNotification["aps"] as? NSDictionary {
                     if let alertDict = userInfoDict["alert"] as? Dictionary<String, String> {

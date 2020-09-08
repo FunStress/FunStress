@@ -20,8 +20,12 @@
 		BC22D77523F883F200E8ED1F /* UnfriendAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC22D77423F883F200E8ED1F /* UnfriendAlertVC.swift */; };
 		BC2420172493661600581B4D /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2420162493661600581B4D /* DesignableTextView.swift */; };
 		BC2852A6244FF42600CB9742 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2852A5244FF42500CB9742 /* MessageCell.swift */; };
+		BC336A9424E271F400A55D28 /* PrivacyPolicy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC336A9324E271F400A55D28 /* PrivacyPolicy.storyboard */; };
+		BC34730F24F22488001A2CB7 /* AgreementsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34730E24F22488001A2CB7 /* AgreementsTVC.swift */; };
 		BC387F962453054C006B920F /* AddMembersToGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387F952453054C006B920F /* AddMembersToGroup.swift */; };
 		BC387F98245305A8006B920F /* AddMemberToGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC387F97245305A8006B920F /* AddMemberToGroupCell.swift */; };
+		BC3A091724E27454003B32B7 /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3A091624E27454003B32B7 /* PrivacyPolicyVC.swift */; };
+		BC3A091A24E274AD003B32B7 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3A091924E274AD003B32B7 /* Global.swift */; };
 		BC44BE8A245987AA00727651 /* EmojiCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44BE89245987AA00727651 /* EmojiCVCell.swift */; };
 		BC4EDE1623A7C9E900E673C5 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EDE1523A7C9E900E673C5 /* UIViewController+Extensions.swift */; };
 		BC4EDE1D23A9143200E673C5 /* ErrorAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4EDE1C23A9143200E673C5 /* ErrorAlertVC.swift */; };
@@ -125,8 +129,12 @@
 		BC22D77423F883F200E8ED1F /* UnfriendAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnfriendAlertVC.swift; sourceTree = "<group>"; };
 		BC2420162493661600581B4D /* DesignableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
 		BC2852A5244FF42500CB9742 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		BC336A9324E271F400A55D28 /* PrivacyPolicy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrivacyPolicy.storyboard; sourceTree = "<group>"; };
+		BC34730E24F22488001A2CB7 /* AgreementsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementsTVC.swift; sourceTree = "<group>"; };
 		BC387F952453054C006B920F /* AddMembersToGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMembersToGroup.swift; sourceTree = "<group>"; };
 		BC387F97245305A8006B920F /* AddMemberToGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberToGroupCell.swift; sourceTree = "<group>"; };
+		BC3A091624E27454003B32B7 /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
+		BC3A091924E274AD003B32B7 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		BC42F00423B54A5C0097E42C /* Stress Buster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stress Buster.entitlements"; sourceTree = "<group>"; };
 		BC44BE89245987AA00727651 /* EmojiCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCVCell.swift; sourceTree = "<group>"; };
 		BC4EDE1523A7C9E900E673C5 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -258,6 +266,24 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		BC336A9224E271E000A55D28 /* Privacy Policy */ = {
+			isa = PBXGroup;
+			children = (
+				BC336A9324E271F400A55D28 /* PrivacyPolicy.storyboard */,
+				BC34730E24F22488001A2CB7 /* AgreementsTVC.swift */,
+				BC3A091624E27454003B32B7 /* PrivacyPolicyVC.swift */,
+			);
+			path = "Privacy Policy";
+			sourceTree = "<group>";
+		};
+		BC3A091824E274A1003B32B7 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				BC3A091924E274AD003B32B7 /* Global.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 		BC4EDE1423A7C9D900E673C5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +356,7 @@
 		BCBCEE1823A6566C0013E66B /* StressBuster */ = {
 			isa = PBXGroup;
 			children = (
+				BC3A091824E274A1003B32B7 /* Global */,
 				BC42F00423B54A5C0097E42C /* Stress Buster.entitlements */,
 				BCECB57323B69F7D002BC808 /* GoogleService-Info.plist */,
 				BCBCEE2A23A6566D0013E66B /* Info.plist */,
@@ -434,6 +461,7 @@
 			children = (
 				BC4EDE1423A7C9D900E673C5 /* Extensions */,
 				BCBCEE4723A70B170013E66B /* Alerts */,
+				BC336A9224E271E000A55D28 /* Privacy Policy */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -658,6 +686,7 @@
 				BCC4193724420DFE002671C8 /* MyProfile.storyboard in Resources */,
 				BCBF0CAE2441F66300F4B88E /* Poppins-SemiBold.ttf in Resources */,
 				BCC4193D244241D7002671C8 /* UserAuth.storyboard in Resources */,
+				BC336A9424E271F400A55D28 /* PrivacyPolicy.storyboard in Resources */,
 				BCC41940244289B8002671C8 /* Avatars.plist in Resources */,
 				BCBF0CA32441F66300F4B88E /* Poppins-Medium.ttf in Resources */,
 				BCBF0CB02441F66300F4B88E /* Poppins-MediumItalic.ttf in Resources */,
@@ -736,6 +765,7 @@
 				BCA18FB924437501003B689C /* StaticTVCell.swift in Sources */,
 				BC44BE8A245987AA00727651 /* EmojiCVCell.swift in Sources */,
 				BCEFA391244C025900B85985 /* CurrentFriendsVC.swift in Sources */,
+				BC3A091724E27454003B32B7 /* PrivacyPolicyVC.swift in Sources */,
 				BC20E53B2444017F00C0E4F6 /* GroupTVCell.swift in Sources */,
 				BCBCEE3D23A65D1A0013E66B /* DesignableTextField.swift in Sources */,
 				BCBF0C792441F3D700F4B88E /* SearchMusicVC.swift in Sources */,
@@ -780,6 +810,8 @@
 				BCEF587D23E6D42D00F51EC1 /* SoundsHelper.swift in Sources */,
 				BCC4193A24423757002671C8 /* AvatarCVCell.swift in Sources */,
 				BCA18FAD2442AADA003B689C /* EnterDetailsTVC.swift in Sources */,
+				BC34730F24F22488001A2CB7 /* AgreementsTVC.swift in Sources */,
+				BC3A091A24E274AD003B32B7 /* Global.swift in Sources */,
 				BC033F7323BB0E0F00F9534F /* UIImageView+Extensions.swift in Sources */,
 				BCBCEE2423A6566C0013E66B /* StressBuster.xcdatamodeld in Sources */,
 				BCBF0C862441F49400F4B88E /* MyProfileTVC.swift in Sources */,
@@ -940,7 +972,7 @@
 				CODE_SIGN_ENTITLEMENTS = "StressBuster/Stress Buster.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 6RNV8J8H5H;
 				INFOPLIST_FILE = StressBuster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -948,7 +980,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 1.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stressbusterapp.StressBuster;
 				PRODUCT_NAME = Tusic;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -965,7 +997,7 @@
 				CODE_SIGN_ENTITLEMENTS = "StressBuster/Stress Buster.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 16;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 6RNV8J8H5H;
 				INFOPLIST_FILE = StressBuster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -973,7 +1005,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.14;
+				MARKETING_VERSION = 1.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stressbusterapp.StressBuster;
 				PRODUCT_NAME = Tusic;
 				PROVISIONING_PROFILE_SPECIFIER = "";

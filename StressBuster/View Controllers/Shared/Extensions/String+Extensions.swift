@@ -32,12 +32,6 @@ extension String {
         return htmlToAttributedString?.string ?? ""
     }
     
-    // MARK: String Helper
-    // Example = Ex
-    // For Example = FE
-    // for example = fe
-    // "" = DP
-    
     public var initials: String {
         
         let words = components(separatedBy: .whitespacesAndNewlines)

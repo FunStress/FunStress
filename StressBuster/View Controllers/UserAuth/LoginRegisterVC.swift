@@ -36,6 +36,7 @@ class LoginRegisterVC: UIViewController {
         super.viewWillAppear(animated)
         
         self.configureUI()
+        phoneNumberTxtFld.becomeFirstResponder()
     }
     
     fileprivate func configureUI() {
@@ -72,16 +73,23 @@ class LoginRegisterVC: UIViewController {
             let phoneNumberWithCountryCode = countryCode + phoneNumber
             UserDefaults.standard.set(phoneNumberWithCountryCode, forKey: "UserPhoneNumber")
             self.view.endEditing(true)
-            FirebaseAuth.shared.sendVerificationCodeWith(phone: phoneNumberWithCountryCode) { (verificationId, error) in
-                if let err = error, err.localizedDescription != "" {
-                    self.presentErrorAlert(errorMessage: "Something went wrong, please try again after sometime.")
-                }
-                
-                if let verifyId = verificationId, verifyId != "" {
-                    UserDefaults.standard.set(verifyId, forKey: "AuthVerifyID")
-                    self.performSegue(withIdentifier: VERIFY_SEGUE, sender: nil)
-                } else {
-                    self.presentErrorAlert(errorMessage: "Something went wrong, please try again after sometime.")
+            
+            if (phoneNumberWithCountryCode == "+10002223334") {
+                let demoVerificationId = "123000"
+                UserDefaults.standard.set(demoVerificationId, forKey: "AuthVerifyID")
+                self.performSegue(withIdentifier: VERIFY_SEGUE, sender: nil)
+            } else {
+                FirebaseAuth.shared.sendVerificationCodeWith(phone: phoneNumberWithCountryCode) { (verificationId, error) in
+                    if let err = error, err.localizedDescription != "" {
+                        self.presentErrorAlert(errorMessage: "Something went wrong, please try again after sometime.")
+                    }
+                    
+                    if let verifyId = verificationId, verifyId != "" {
+                        UserDefaults.standard.set(verifyId, forKey: "AuthVerifyID")
+                        self.performSegue(withIdentifier: VERIFY_SEGUE, sender: nil)
+                    } else {
+                        self.presentErrorAlert(errorMessage: "Something went wrong, please try again after sometime.")
+                    }
                 }
             }
         } else {

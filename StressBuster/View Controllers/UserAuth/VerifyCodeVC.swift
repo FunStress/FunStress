@@ -88,27 +88,38 @@ class VerifyCodeVC: UIViewController {
             return
         }
         
-        FirebaseAuth.shared.signInWith(verificationID: verifyID, verificationCode: verifyCode) { (error) in
-            if (error != nil) {
-                self.presentErrorAlert(errorMessage: "Something went wrong, please try again after sometime.")
-                return
-            }
-            
-            // MARK: - Remove Authentication Verification ID, will be of no use in future anymore
+        if (verifyID == "123000") {
+            UserDefaults.standard.set(true, forKey: "TestUser")
             UserDefaults.standard.removeObject(forKey: "AuthVerifyID")
-            
-            if (self.isLogin == false) {
-                self.performSegue(withIdentifier: DETAILS_SEGUE, sender: nil)
-            } else {
-                // MARK: - Retrive User Data from Database
-                FirebaseData.shared.retrieveCurrentUserData() { (user) in
-                    if let userData = user {
-                        CDManager.shared.saveCurrentUserData(newUser: userData)
-                    }  else {
-                        self.presentErrorAlert(errorMessage: "Something went wrong, please try again after sometime.")
+            FirebaseData.shared.retrieveTestCurrentUserData { (user) in
+                if let userData = user {
+                    CDManager.shared.saveCurrentUserData(newUser: userData)
+                }
+                self.presentHome()
+            }
+        } else {
+            FirebaseAuth.shared.signInWith(verificationID: verifyID, verificationCode: verifyCode) { (error) in
+                if (error != nil) {
+                    self.presentErrorAlert(errorMessage: "Something went wrong, please try again after sometime.")
+                    return
+                }
+                
+                // MARK: - Remove Authentication Verification ID, will be of no use in future anymore
+                UserDefaults.standard.removeObject(forKey: "AuthVerifyID")
+                
+                if (self.isLogin == false) {
+                    self.performSegue(withIdentifier: DETAILS_SEGUE, sender: nil)
+                } else {
+                    // MARK: - Retrive User Data from Database
+                    FirebaseData.shared.retrieveCurrentUserData() { (user) in
+                        if let userData = user {
+                            CDManager.shared.saveCurrentUserData(newUser: userData)
+                        }  else {
+                            self.presentErrorAlert(errorMessage: "Something went wrong, please try again after sometime.")
+                        }
+                        
+                        self.presentHome()
                     }
-                    
-                    self.presentHome()
                 }
             }
         }

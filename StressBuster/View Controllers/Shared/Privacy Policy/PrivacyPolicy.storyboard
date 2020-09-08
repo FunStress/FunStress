@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lkq-AJ-ndc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Privacy Policy-->
+        <scene sceneID="TJq-a4-dJL">
+            <objects>
+                <viewController storyboardIdentifier="privacyPolicyVC" title="Privacy Policy" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CUv-fw-8IM" customClass="PrivacyPolicyVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B32-H8-DUm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8h-fw-e3H">
+                                <rect key="frame" x="20" y="10" width="374" height="788"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FbI-O5-7Lc" firstAttribute="trailing" secondItem="X8h-fw-e3H" secondAttribute="trailing" constant="20" id="7Z3-bb-ssk"/>
+                            <constraint firstItem="FbI-O5-7Lc" firstAttribute="bottom" secondItem="X8h-fw-e3H" secondAttribute="bottom" constant="10" id="97M-vk-weo"/>
+                            <constraint firstItem="X8h-fw-e3H" firstAttribute="leading" secondItem="FbI-O5-7Lc" secondAttribute="leading" constant="20" id="EkT-uQ-ihi"/>
+                            <constraint firstItem="X8h-fw-e3H" firstAttribute="top" secondItem="FbI-O5-7Lc" secondAttribute="top" constant="10" id="m5K-lA-aQ5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FbI-O5-7Lc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="foP-kH-CXc"/>
+                    <connections>
+                        <outlet property="webView" destination="X8h-fw-e3H" id="eyf-8Q-4ER"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biJ-1A-6Tn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2417" y="254"/>
+        </scene>
+        <!--Security & Policy-->
+        <scene sceneID="ER2-gK-Sqj">
+            <objects>
+                <tableViewController title="Security &amp; Policy" id="Lkq-AJ-ndc" customClass="AgreementsTVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="vWr-4f-Yhv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Privacy Policy" id="imd-6N-h7N">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" tag="10" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="50" id="Jez-Yy-8bk">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jez-Yy-8bk" id="Jyk-rf-NnS">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2S-R3-boF">
+                                                    <rect key="frame" x="20" y="0.0" width="340" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="z2S-R3-boF" firstAttribute="leading" secondItem="Jyk-rf-NnS" secondAttribute="leadingMargin" id="ho1-nI-lZS"/>
+                                                <constraint firstAttribute="bottom" secondItem="z2S-R3-boF" secondAttribute="bottom" id="kad-uz-w0T"/>
+                                                <constraint firstItem="z2S-R3-boF" firstAttribute="top" secondItem="Jyk-rf-NnS" secondAttribute="top" id="o8a-B1-mR7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="z2S-R3-boF" secondAttribute="trailing" constant="15" id="x72-zj-qOg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="EULA License" id="EU3-ye-GRm">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" tag="11" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="50" id="aDz-2a-OED">
+                                        <rect key="frame" x="0.0" y="161.5" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aDz-2a-OED" id="kbx-6r-vTt">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End-User License Agreement " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NU5-VV-Nco">
+                                                    <rect key="frame" x="20" y="0.0" width="340" height="50"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NU5-VV-Nco" firstAttribute="leading" secondItem="kbx-6r-vTt" secondAttribute="leadingMargin" id="A5j-fx-ODx"/>
+                                                <constraint firstAttribute="bottom" secondItem="NU5-VV-Nco" secondAttribute="bottom" id="TWI-uG-zsx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NU5-VV-Nco" secondAttribute="trailing" constant="15" id="UOH-yn-Z6L"/>
+                                                <constraint firstItem="NU5-VV-Nco" firstAttribute="top" secondItem="kbx-6r-vTt" secondAttribute="top" id="mNW-Db-tcq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Agreements" largeTitleDisplayMode="never" id="KP4-VI-fdL"/>
+                    <connections>
+                        <segue destination="CUv-fw-8IM" kind="show" identifier="toAgreementsWebViewSegue" id="eNk-FA-qCg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3j-wp-k5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652.1739130434785" y="253.79464285714283"/>
+        </scene>
+    </scenes>
+</document>

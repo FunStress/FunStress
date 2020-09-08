@@ -37,20 +37,40 @@ class MyProfileTVC: UITableViewController {
     }
     
     fileprivate func configureUI() {
-        FirebaseData.shared.retrieveCurrentUserData { (user) in
-            if let userDetails = user {
-                self.userData = userDetails
-                
-                self.firstNameLbl.text = userDetails.firstName ?? ""
-                self.lastNameLbl.text = userDetails.lastName ?? ""
-                self.phoneNumberLbl.text = userDetails.phoneNumber ?? ""
-                self.emailLbl.text = userDetails.email ?? ""
-                
-                if let avatarName = userDetails.avatar {
-                    let spaceReplaced = avatarName.replacingOccurrences(of: " ", with: "")
-                    let dotReplaced = spaceReplaced.replacingOccurrences(of: ".", with: "")
-                    let hyphenReplaced = dotReplaced.replacingOccurrences(of: "-", with: "")
-                    self.avatarImgView.image = UIImage(named: hyphenReplaced)
+        if let testUser = UserDefaults.standard.value(forKey: "TestUser") as? Bool, testUser {
+            FirebaseData.shared.retrieveTestCurrentUserData { (user) in
+                if let userDetails = user {
+                    self.userData = userDetails
+                    
+                    self.firstNameLbl.text = userDetails.firstName ?? ""
+                    self.lastNameLbl.text = userDetails.lastName ?? ""
+                    self.phoneNumberLbl.text = userDetails.phoneNumber ?? ""
+                    self.emailLbl.text = userDetails.email ?? ""
+                    
+                    if let avatarName = userDetails.avatar {
+                        let spaceReplaced = avatarName.replacingOccurrences(of: " ", with: "")
+                        let dotReplaced = spaceReplaced.replacingOccurrences(of: ".", with: "")
+                        let hyphenReplaced = dotReplaced.replacingOccurrences(of: "-", with: "")
+                        self.avatarImgView.image = UIImage(named: hyphenReplaced)
+                    }
+                }
+            }
+        } else {
+            FirebaseData.shared.retrieveCurrentUserData { (user) in
+                if let userDetails = user {
+                    self.userData = userDetails
+                    
+                    self.firstNameLbl.text = userDetails.firstName ?? ""
+                    self.lastNameLbl.text = userDetails.lastName ?? ""
+                    self.phoneNumberLbl.text = userDetails.phoneNumber ?? ""
+                    self.emailLbl.text = userDetails.email ?? ""
+                    
+                    if let avatarName = userDetails.avatar {
+                        let spaceReplaced = avatarName.replacingOccurrences(of: " ", with: "")
+                        let dotReplaced = spaceReplaced.replacingOccurrences(of: ".", with: "")
+                        let hyphenReplaced = dotReplaced.replacingOccurrences(of: "-", with: "")
+                        self.avatarImgView.image = UIImage(named: hyphenReplaced)
+                    }
                 }
             }
         }
@@ -74,6 +94,7 @@ class MyProfileTVC: UITableViewController {
     }
     
     @IBAction func logoutOutBtnPressed(_ sender: UIButton) {
+        UserDefaults.standard.set(false, forKey: "TestUser")
         self.presentLogOutAlert()
     }
     
