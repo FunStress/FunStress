@@ -20,7 +20,7 @@ class MainTabBarVC: UITabBarController {
         super.viewWillAppear(animated)
         
         let appearance = UITabBarItem.appearance()
-        let attributes = [NSAttributedString.Key.font:UIFont(name: "Poppins-Regular", size: 12)]
+        let attributes = [NSAttributedString.Key.font:UIFont(name: "Montserrat-Medium", size: 12)]
         appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key : Any], for: .normal)
     }
 }

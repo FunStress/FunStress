@@ -41,9 +41,9 @@ class VerifyCodeVC: UIViewController {
         
         // MARK: - Normal Text
         let mutableTitleString = NSMutableAttributedString()
-        let normalText = NSAttributedString(string: "Didn't receive code? ", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), NSAttributedString.Key.font: UIFont(name: "Poppins-Regular", size: 15.0)!])
+        let normalText = NSAttributedString(string: "Didn't receive code? ", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 15.0)!])
         
-        let highlightedText = NSAttributedString(string: "Send Again", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1),  NSAttributedString.Key.font: UIFont(name: "Poppins-SemiBold", size: 15.0)!])
+        let highlightedText = NSAttributedString(string: "Send Again", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1),  NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 15.0)!])
         
         mutableTitleString.append(normalText)
         mutableTitleString.append(highlightedText)

@@ -153,8 +153,8 @@ exports.sendMusicNotificationToGroup = functions.database
     // Notification details.
     const payload = {
       notification: {
-        title: `${groupName} - ${senderName}`,
-        body: `${groupName} - ${senderName} sent music.`,
+        title: `New Message`,
+        body: `${senderName} sent you music.`,
         icon: `https://is3-ssl.mzstatic.com/image/thumb/Music113/v4/88/48/8f/88488f62-ac34-a109-569c-6cda49352855/source/100x100bb.jpg`,
         sound: "default",
       },

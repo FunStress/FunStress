@@ -75,4 +75,16 @@ public final class ContactsHelper {
         
         return nil
     }
+    
+    func getProfilesFromContacts() -> [Profile] {
+        var contactProfiles = [Profile]()
+        let contacts = self.getContacts()
+        
+        for contact in contacts {
+            let profile = Profile(id: "", deviceToken: "", firstName: contact.firstName, lastName: contact.lastName, email: "", avatar: "", phoneNumber: contact.phoneNumber)
+            contactProfiles.append(profile)
+        }
+        
+        return contactProfiles
+    }
 }

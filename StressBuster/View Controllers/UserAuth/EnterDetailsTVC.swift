@@ -48,11 +48,11 @@ class EnterDetailsTVC: UITableViewController {
         self.agreementsImgView.image = UIImage(named: "uncheckboxIcon")
         
         let attrs: [NSAttributedString.Key : Any] = [
-            NSAttributedString.Key.font : UIFont(name: "Poppins", size: 17.0)!,
+            NSAttributedString.Key.font : UIFont(name: "Montserrat-Medium", size: 17.0)!,
             NSAttributedString.Key.foregroundColor : UIColor.black]
 
         let blueAttrs: [NSAttributedString.Key : Any] = [
-        NSAttributedString.Key.font : UIFont(name: "Poppins", size: 17.0)!,
+        NSAttributedString.Key.font : UIFont(name: "Montserrat-Medium", size: 17.0)!,
         NSAttributedString.Key.foregroundColor : UIColor.blue,
         NSAttributedString.Key.underlineStyle : 1]
 
@@ -79,7 +79,7 @@ class EnterDetailsTVC: UITableViewController {
     // MARK: - TableView DataSource & Delegate
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
-        header.textLabel?.font = UIFont(name: "Poppins-Regular", size: 12)!
+        header.textLabel?.font = UIFont(name: "Montserrat-Medium", size: 12)!
         header.textLabel?.textColor = UIColor.lightGray
     }
     

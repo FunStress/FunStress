@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // MARK: - Back Button Font Change
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Poppins-Regular", size: 16.0)!], for: .normal)
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Montserrat-Medium", size: 17.0)!], for: .normal)
         
         // MARK: - User Notification Permission
         if #available(iOS 10.0, *) {
@@ -180,10 +180,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             }
         }
     }
-    
-    func applicationWillEnterForeground(_ application: UIApplication) { }
-    
-    func applicationDidBecomeActive(_ application: UIApplication) { }
 }
 
 extension AppDelegate {
@@ -198,6 +194,7 @@ extension AppDelegate {
     fileprivate func presentHome() {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let homeTabBarVC: UITabBarController = (storyBoard.instantiateViewController(withIdentifier: "homeTabBar") as? UITabBarController)!
+        homeTabBarVC.selectedIndex = 1
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = homeTabBarVC
         self.window?.makeKeyAndVisible()
@@ -211,7 +208,7 @@ extension AppDelegate {
         self.window?.rootViewController = homeTabBarVC
         
         if let groupsNavigation = homeTabBarVC.viewControllers?[1] as? UINavigationController,
-            let groupsVC = groupsNavigation.viewControllers.first as? GroupChatsVC {
+            let groupsVC = groupsNavigation.viewControllers.first as? ChatListVC {
             groupsVC.notificationGroupName = groupName
         }
             
@@ -225,7 +222,7 @@ extension AppDelegate {
         self.window?.rootViewController = homeTabBarVC
         
         if let groupsNavigation = homeTabBarVC.viewControllers?[1] as? UINavigationController,
-            let groupsVC = groupsNavigation.viewControllers.first as? GroupChatsVC {
+            let groupsVC = groupsNavigation.viewControllers.first as? ChatListVC {
             
         }
             

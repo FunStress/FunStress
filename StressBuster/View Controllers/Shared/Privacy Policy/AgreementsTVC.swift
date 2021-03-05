@@ -15,11 +15,12 @@ let EULA_CELL_TAG = 11
 class AgreementsTVC: UITableViewController {
 
     var agreementText = ""
+    var agreementTitle = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "Secutiy & Policy"
+        self.navigationItem.title = "Security & Privacy"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,8 +35,10 @@ class AgreementsTVC: UITableViewController {
         if let cell = tableView.cellForRow(at: indexPath) {
             if (cell.tag == PRIVACY_POLICY_CELL_TAG) {
                 agreementText = privacyPolicy
+                agreementTitle = "Privacy"
             } else if (cell.tag == EULA_CELL_TAG) {
                 agreementText = eula
+                agreementTitle = "EULA"
             } else {
                 debugPrint("No row is selected")
             }

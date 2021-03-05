@@ -34,6 +34,7 @@ extension UIViewController {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let mainTabBarVC : UITabBarController = (storyBoard.instantiateViewController(withIdentifier: "homeTabBar") as? UITabBarController)!
         mainTabBarVC.modalPresentationStyle = .fullScreen
+        mainTabBarVC.selectedIndex = 1
         self.present(mainTabBarVC, animated: true, completion: nil)
     }
     

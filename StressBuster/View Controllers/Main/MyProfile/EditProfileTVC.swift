@@ -73,8 +73,23 @@ class EditProfileTVC: UITableViewController {
     // MARK: - TableView DataSource & Delegate
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
-        header.textLabel?.font = UIFont(name: "Poppins-Regular", size: 12)!
-        header.textLabel?.textColor = UIColor.lightGray
+        header.textLabel?.font = UIFont(name: "Montserrat-Medium", size: 15)!
+        header.textLabel?.textColor = #colorLiteral(red: 0.5333333333, green: 0.5333333333, blue: 0.5333333333, alpha: 1)
+        
+        switch (section) {
+        case 0:
+            header.textLabel?.text = "Avatar"
+        case 1:
+            header.textLabel?.text = "First Name"
+        case 2:
+            header.textLabel?.text = "Last Name"
+        case 3:
+            header.textLabel?.text = "Email Address"
+        case 4:
+            header.textLabel?.text = "Phone Number"
+        default:
+            debugPrint("No Sections")
+        }
     }
     
     @IBAction func saveBtnPressed(_ sender: UIButton) {

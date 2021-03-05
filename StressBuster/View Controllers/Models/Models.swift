@@ -56,6 +56,7 @@ struct PhoneContact {
 // MARK: - Group Models
 struct Group {
     let id: String?
+    let isGroup: Bool?
     let name: String?
     let description: String?
     let avatar: String?
@@ -73,7 +74,7 @@ struct AudioMessage {
     let timeStamp: Date?
 }
 
-// MARK: - GroupVC Model
+// MARK: - ChatVC Model
 struct Message {
     let track: String
     let artist: String

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r7j-tV-rW5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r7j-tV-rW5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Poppins-Medium.ttf">
-            <string>Poppins-Medium</string>
-        </array>
-        <array key="Poppins-Regular.ttf">
-            <string>Poppins-Regular</string>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
         </array>
     </customFonts>
     <scenes>
-        <!--Welcome-->
+        <!--Tusic-->
         <scene sceneID="LGJ-PZ-nad">
             <objects>
                 <viewController id="Edz-aI-Phk" customClass="WelcomeVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,14 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2020 Tusic. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYq-Bm-Rwb">
-                                <rect key="frame" x="20" y="833" width="354" height="14"/>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3l4-MK-k7y">
-                                <rect key="frame" x="94.5" y="615" width="225" height="120"/>
+                                <rect key="frame" x="94.5" y="692" width="225" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtM-fp-qp5" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="225" height="50"/>
@@ -39,7 +32,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="vTw-3y-YjO"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -52,13 +45,13 @@
                                             <action selector="loginBtnPressed:" destination="Edz-aI-Phk" eventType="touchUpInside" id="GFX-s0-S4P"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIc-X6-PFx" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIc-X6-PFx" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="225" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="9YT-1g-KZg"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="Register Now">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -77,38 +70,23 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo150" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-gr-NWg">
-                                <rect key="frame" x="132" y="138" width="150" height="150"/>
+                                <rect key="frame" x="107" y="138" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Bhi-zM-GLG"/>
-                                    <constraint firstAttribute="width" constant="150" id="sfP-Ew-xrn"/>
+                                    <constraint firstAttribute="height" constant="200" id="Bhi-zM-GLG"/>
+                                    <constraint firstAttribute="width" constant="200" id="sfP-Ew-xrn"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yq-k2-KiV">
-                                <rect key="frame" x="24" y="765" width="366" height="28"/>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="11"/>
-                                <state key="normal" title="Privacy Policy"/>
-                                <connections>
-                                    <action selector="privacyPolicyBtnPressed:" destination="Edz-aI-Phk" eventType="touchUpInside" id="J4B-KV-v8P"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="1yq-k2-KiV" firstAttribute="top" secondItem="3l4-MK-k7y" secondAttribute="bottom" constant="30" id="2yz-yD-wbY"/>
-                            <constraint firstItem="WYq-Bm-Rwb" firstAttribute="leading" secondItem="EhP-Hr-Rej" secondAttribute="leading" constant="20" id="DLQ-l1-u27"/>
-                            <constraint firstItem="1yq-k2-KiV" firstAttribute="centerX" secondItem="6Za-Sj-9DS" secondAttribute="centerX" id="HJ8-nH-ABl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WYq-Bm-Rwb" secondAttribute="trailing" constant="20" id="VOJ-xS-PWQ"/>
-                            <constraint firstItem="yXI-gr-NWg" firstAttribute="top" secondItem="EhP-Hr-Rej" secondAttribute="top" constant="50" id="ZeD-S3-Olm"/>
-                            <constraint firstItem="1yq-k2-KiV" firstAttribute="leading" secondItem="EhP-Hr-Rej" secondAttribute="leading" constant="24" id="hEi-yz-nHz"/>
-                            <constraint firstItem="WYq-Bm-Rwb" firstAttribute="top" secondItem="1yq-k2-KiV" secondAttribute="bottom" constant="40" id="qtu-Nz-zJL"/>
-                            <constraint firstItem="3l4-MK-k7y" firstAttribute="centerX" secondItem="6Za-Sj-9DS" secondAttribute="centerX" id="t2B-5Z-13f"/>
-                            <constraint firstItem="EhP-Hr-Rej" firstAttribute="bottom" secondItem="WYq-Bm-Rwb" secondAttribute="bottom" constant="15" id="wpy-VC-dMH"/>
-                            <constraint firstItem="yXI-gr-NWg" firstAttribute="centerX" secondItem="6Za-Sj-9DS" secondAttribute="centerX" id="xHz-S4-sMn"/>
-                            <constraint firstItem="EhP-Hr-Rej" firstAttribute="trailing" secondItem="1yq-k2-KiV" secondAttribute="trailing" constant="24" id="zyM-uH-Yo0"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EhP-Hr-Rej"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yXI-gr-NWg" firstAttribute="top" secondItem="EhP-Hr-Rej" secondAttribute="top" constant="50" id="ZeD-S3-Olm"/>
+                            <constraint firstItem="EhP-Hr-Rej" firstAttribute="bottom" secondItem="3l4-MK-k7y" secondAttribute="bottom" constant="50" id="b8F-ds-VUU"/>
+                            <constraint firstItem="3l4-MK-k7y" firstAttribute="centerX" secondItem="6Za-Sj-9DS" secondAttribute="centerX" id="t2B-5Z-13f"/>
+                            <constraint firstItem="yXI-gr-NWg" firstAttribute="centerX" secondItem="6Za-Sj-9DS" secondAttribute="centerX" id="xHz-S4-sMn"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome" id="Jcl-Ex-RyL"/>
+                    <navigationItem key="navigationItem" title="Tusic" id="Jcl-Ex-RyL"/>
                     <connections>
                         <segue destination="2EX-15-zjb" kind="show" identifier="logInSegue" id="k5z-sz-Vg3"/>
                         <segue destination="2EX-15-zjb" kind="show" identifier="registerNowSegue" id="nby-Na-edh"/>
@@ -127,24 +105,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2H-EB-myi">
-                                <rect key="frame" x="20" y="295" width="374" height="82"/>
+                                <rect key="frame" x="20" y="295.5" width="374" height="81"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHONE NUMBER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyG-OL-JeR">
-                                        <rect key="frame" x="0.0" y="5" width="374" height="17"/>
-                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyG-OL-JeR">
+                                        <rect key="frame" x="0.0" y="5" width="374" height="16"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTO-XH-zBj" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="32" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="31" width="374" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qft-sN-E99">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qft-sN-E99">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="75" id="gat-Nx-HEb"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                 <state key="normal" title="+1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -154,11 +132,11 @@
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="1234567890" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2e-ul-HLK" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                 <rect key="frame" x="75" y="0.0" width="299" height="50"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="phonePad" textContentType="name"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="phonePad" textContentType="tel"/>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="HBv-dD-XTL"/>
                                             <constraint firstAttribute="bottom" secondItem="qft-sN-E99" secondAttribute="bottom" id="T1v-JC-srh"/>
@@ -191,7 +169,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="QyG-OL-JeR" firstAttribute="leading" secondItem="e2H-EB-myi" secondAttribute="leading" id="2VQ-19-JTA"/>
                                     <constraint firstAttribute="trailing" secondItem="nTO-XH-zBj" secondAttribute="trailing" id="2ye-dO-4Cm"/>
@@ -203,14 +181,14 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfW-Qv-utU" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
-                                <rect key="frame" x="224" y="407" width="150" height="50"/>
+                                <rect key="frame" x="224" y="406.5" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="83X-Rc-Mow"/>
                                     <constraint firstAttribute="height" constant="50" id="ink-Kd-nhC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
-                                <state key="normal" title="Next" image="next">
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -230,7 +208,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="11G-lB-jOu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="e2H-EB-myi" firstAttribute="leading" secondItem="11G-lB-jOu" secondAttribute="leading" constant="20" id="72D-RP-oNR"/>
                             <constraint firstItem="11G-lB-jOu" firstAttribute="trailing" secondItem="e2H-EB-myi" secondAttribute="trailing" constant="20" id="HvG-yH-w8S"/>
@@ -240,7 +219,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="zfW-Qv-utU" secondAttribute="trailing" constant="20" id="lGc-iR-vVj"/>
                             <constraint firstItem="Dae-j8-iJh" firstAttribute="centerX" secondItem="iWM-Fo-nNW" secondAttribute="centerX" id="p9m-H0-0l8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="11G-lB-jOu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="zrT-Pe-VS6"/>
                     <connections>
@@ -262,8 +240,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4C3-y7-ZcU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="separatorColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="countryCell" rowHeight="60" id="PAV-Ei-Wem" customClass="CountryCell" customModule="Tusic" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="60"/>
@@ -274,7 +252,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIY-C1-8gc">
                                             <rect key="frame" x="20" y="5" width="294" height="50"/>
-                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -283,7 +261,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="JRO-ce-PWe"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -334,7 +312,7 @@
                                 <rect key="frame" x="40" y="128" width="334" height="153"/>
                                 <string key="text">Please enter the OTP sent to
 (xxx) xxx-xxxx</string>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -344,8 +322,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="VBx-VM-wV7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="numberPad" textContentType="name"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardType="numberPad" textContentType="tel"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="calibratedRGB"/>
@@ -368,8 +346,8 @@
                                     <constraint firstAttribute="width" constant="150" id="3Tc-kj-eeE"/>
                                     <constraint firstAttribute="height" constant="50" id="4nw-8i-Z04"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
-                                <state key="normal" title="Next" image="next">
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -381,16 +359,17 @@
                                     <action selector="nextBtnPressed:" destination="sKS-eU-hLD" eventType="touchUpInside" id="FJM-lJ-SMv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buI-ox-AIi">
-                                <rect key="frame" x="20" y="491" width="374" height="33"/>
-                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buI-ox-AIi">
+                                <rect key="frame" x="20" y="491" width="374" height="32"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Resend OTP?"/>
                                 <connections>
                                     <action selector="resendOTPBtnPressed:" destination="sKS-eU-hLD" eventType="touchUpInside" id="0rv-yq-fwZ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dFg-vB-UNy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dFg-vB-UNy" firstAttribute="trailing" secondItem="xxs-dh-Mnk" secondAttribute="trailing" constant="20" id="BUO-Xe-8UT"/>
                             <constraint firstItem="Cfo-fu-Usr" firstAttribute="leading" secondItem="dFg-vB-UNy" secondAttribute="leading" constant="40" id="BXS-nX-JTq"/>
@@ -408,7 +387,6 @@
                             <constraint firstItem="dFg-vB-UNy" firstAttribute="bottom" secondItem="Mz6-Gq-Z8s" secondAttribute="bottom" constant="50" id="v7f-Mm-o1T"/>
                             <constraint firstItem="Cfo-fu-Usr" firstAttribute="top" secondItem="dFg-vB-UNy" secondAttribute="top" constant="40" id="x0l-ho-OS8"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dFg-vB-UNy"/>
                     </view>
                     <navigationItem key="navigationItem" title="Verify" id="o7A-I5-RPE"/>
                     <connections>
@@ -431,8 +409,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dIN-ge-QJ1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -449,9 +429,9 @@
             <objects>
                 <tableViewController id="EcQ-Gp-A0t" customClass="EnterDetailsTVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="LTv-0R-CXI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Avatar" id="U2P-4f-VSX">
                                 <cells>
@@ -464,7 +444,7 @@
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fdh-xB-Jvc">
                                                     <rect key="frame" x="20" y="5" width="394" height="140"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YOk-CL-Zc1">
                                                         <size key="itemSize" width="103" height="104"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -493,7 +473,7 @@
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avatar Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iew-WA-Vhv">
                                                                         <rect key="frame" x="18" y="80" width="89" height="47"/>
-                                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                                                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -543,7 +523,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GmY-nn-DuI" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="50"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -583,7 +563,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kR9-lL-2gv" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="50"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -623,7 +603,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmX-7M-XnS" customClass="DesignableTextField" customModule="Tusic" customModuleProvider="target">
                                                     <rect key="frame" x="20" y="5" width="374" height="50"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" textContentType="email"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
@@ -667,9 +647,9 @@
                                                         <constraint firstAttribute="width" constant="30" id="c60-SF-rIE"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi7-vg-h87">
-                                                    <rect key="frame" x="70" y="7" width="324" height="36"/>
-                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi7-vg-h87">
+                                                    <rect key="frame" x="70" y="8.5" width="324" height="33"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                                     <state key="normal" title="I Accept the Agreemets">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
@@ -705,8 +685,8 @@
                                                         <constraint firstAttribute="width" constant="150" id="1LU-Cy-VxJ"/>
                                                         <constraint firstAttribute="height" constant="50" id="xPy-SE-l0p"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
-                                                    <state key="normal" title="Save" image="checkmark">
+                                                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                    <state key="normal" title="Save">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -730,7 +710,7 @@
                         </sections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Enter Details" largeTitleDisplayMode="never" id="LKM-Ze-KfO"/>
-                    <size key="freeformSize" width="414" height="1000"/>
+                    <size key="freeformSize" width="414" height="900"/>
                     <connections>
                         <outlet property="agreementsBtn" destination="gi7-vg-h87" id="0F3-up-HMp"/>
                         <outlet property="agreementsImgView" destination="9WP-aG-ZZt" id="jGs-Lt-Fei"/>
@@ -753,18 +733,54 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evD-gb-jim" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1329" y="2073"/>
+            <point key="canvasLocation" x="1391" y="1959"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="03x-Sd-t7H">
+            <size key="intrinsicContentSize" width="100" height="100"/>
+        </designable>
+        <designable name="AtM-fp-qp5">
+            <size key="intrinsicContentSize" width="43" height="32"/>
+        </designable>
+        <designable name="GmY-nn-DuI">
+            <size key="intrinsicContentSize" width="113" height="21.5"/>
+        </designable>
+        <designable name="H2e-ul-HLK">
+            <size key="intrinsicContentSize" width="125" height="21.5"/>
+        </designable>
+        <designable name="cee-Nb-3BO">
+            <size key="intrinsicContentSize" width="38" height="32"/>
+        </designable>
+        <designable name="eIc-X6-PFx">
+            <size key="intrinsicContentSize" width="103" height="32"/>
+        </designable>
+        <designable name="kR9-lL-2gv">
+            <size key="intrinsicContentSize" width="112.5" height="21.5"/>
+        </designable>
+        <designable name="pe7-gT-sgX">
+            <size key="intrinsicContentSize" width="87" height="21.5"/>
+        </designable>
+        <designable name="rmX-7M-XnS">
+            <size key="intrinsicContentSize" width="72" height="21.5"/>
+        </designable>
+        <designable name="xxs-dh-Mnk">
+            <size key="intrinsicContentSize" width="36" height="32"/>
+        </designable>
+        <designable name="zfW-Qv-utU">
+            <size key="intrinsicContentSize" width="36" height="32"/>
+        </designable>
+    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="nby-Na-edh"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="checkmark" width="22" height="22"/>
         <image name="launchLogo" width="100" height="100"/>
         <image name="logo150" width="150" height="150"/>
-        <image name="next" width="22" height="22"/>
         <image name="profile" width="100" height="100"/>
         <image name="uncheckboxIcon" width="27" height="27"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

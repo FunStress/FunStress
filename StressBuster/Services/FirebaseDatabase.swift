@@ -115,6 +115,15 @@ public final class FirebaseData {
         }
     }
     
+    // MARK: - Retrieve Current User UID
+    func retrieveCurrentUserUID(onCompletion: @escaping(_ uid: String) -> Void) {
+        guard let currentUser = Auth.auth().currentUser else {
+            onCompletion("")
+            return
+        }
+        onCompletion(currentUser.uid)
+    }
+    
     // MARK: - Retrive User Data with userId from Database
     func retrieveDataWith(userId: String, onCompletion: @escaping(_ user: Profile) -> Void) {
         databaseRef.child("users").child(userId).observeSingleEvent(of: .value) { (snapshot) in
@@ -130,6 +139,42 @@ public final class FirebaseData {
             
             let profile = Profile(id: userId, deviceToken: token, firstName: firstName, lastName: lastName, email: email, avatar: avatar, phoneNumber: phoneNumber)
             onCompletion(profile)
+        }
+    }
+    
+    // MARK: - Retrieve Users Data with Phone Number from Database
+    func retrieveDataWithPhoneNumber(userPhoneNumber: String, onCompletion: @escaping(_ user: [Profile]) -> Void) {
+        // +1 check
+        var phoneNumberModified = ""
+        if (userPhoneNumber.contains("+1")) {
+            phoneNumberModified = userPhoneNumber
+        } else if (userPhoneNumber.first == "1") {
+            phoneNumberModified = "+\(userPhoneNumber)"
+        } else {
+            phoneNumberModified = "+1\(userPhoneNumber)"
+        }
+        
+        databaseRef.child("users").observeSingleEvent(of: .value) { (snapshot) in
+            var users = [Profile]()
+            if let usersDict = snapshot.value as? NSDictionary {
+                for (_, userDict) in usersDict {
+                    if let userData = userDict as? NSDictionary {
+                        let userId = userData["id"] as? String
+                        let token = userData["deviceToken"] as? String
+                        let firstName = userData["firstName"] as? String
+                        let lastName = userData["lastName"] as? String
+                        let email = userData["email"] as? String
+                        let phoneNumber = userData["phoneNumber"] as? String
+                        let avatar = userData["avatar"] as? String
+                        
+                        if (phoneNumber == phoneNumberModified) {
+                            let profile = Profile(id: userId, deviceToken: token, firstName: firstName, lastName: lastName, email: email, avatar: avatar, phoneNumber: phoneNumber)
+                            users.append(profile)
+                        }
+                    }
+                }
+            }
+            onCompletion(users)
         }
     }
     
@@ -375,12 +420,55 @@ public final class FirebaseData {
         }
     }
     
+    // MARK: - Check if User Phone Number
+    func checkIfUserExistsReturnUid(phoneNumber: String, onCompletion: @escaping(_ userUid: String) -> Void) {
+        // +1 check
+        var phoneNumberModified = ""
+        if (phoneNumber.contains("+1")) {
+            phoneNumberModified = phoneNumber
+        } else if (phoneNumber.first == "1") {
+            phoneNumberModified = "+\(phoneNumber)"
+        } else {
+            phoneNumberModified = "+1\(phoneNumber)"
+        }
+        
+        self.databaseRef.child("users").queryOrdered(byChild: "phoneNumber").queryEqual(toValue: phoneNumberModified).observeSingleEvent(of: .value) { (snapshot) in
+            if let requestsDict = snapshot.value as? NSDictionary, requestsDict.count > 0 {
+                onCompletion(requestsDict.allKeys.first as! String)
+            } else {
+                onCompletion("")
+            }
+        }
+    }
+    
+    // MARK: - Check if User Phone Number
+    func checkIfUserExists(phoneNumber: String, onCompletion: @escaping(_ isExists: Bool) -> Void) {
+        // +1 check
+        var phoneNumberModified = ""
+        if (phoneNumber.contains("+1")) {
+            phoneNumberModified = phoneNumber
+        } else if (phoneNumber.first == "1") {
+            phoneNumberModified = "+\(phoneNumber)"
+        } else {
+            phoneNumberModified = "+1\(phoneNumber)"
+        }
+        
+        self.databaseRef.child("users").queryOrdered(byChild: "phoneNumber").queryEqual(toValue: phoneNumberModified).observeSingleEvent(of: .value) { (snapshot) in
+            if let requestsDict = snapshot.value as? NSDictionary, requestsDict.count > 0 {
+                onCompletion(true)
+            } else {
+                onCompletion(false)
+            }
+        }
+    }
+    
     // MARK: - Create New Group
-    func createNewGroup(name: String, description: String, avatar: String, users: [String], onCompletion: @escaping(_ success: Bool, _ error: Error?) -> Void) {
+    func createNewGroup(name: String, description: String, avatar: String, users: [String], isGroup: Bool, onCompletion: @escaping(_ success: Bool, _ error: Error?) -> Void) {
         let userData: [String: Any] = ["name": name,
                                        "description": description,
                                        "avatar": avatar,
-                                       "users": users]
+                                       "users": users,
+                                       "isGroup": isGroup]
         
         databaseRef.child("groups").childByAutoId().setValue(userData) {
             (error:Error?, ref:DatabaseReference) in
@@ -388,6 +476,24 @@ public final class FirebaseData {
                 onCompletion(false, error)
             } else {
                 onCompletion(true, nil)
+            }
+        }
+    }
+    
+    // MARK: - Create New Group and Get GroupID
+    func createNewGroupGetGroupId(name: String, description: String, avatar: String, users: [String], isGroup: Bool, onCompletion: @escaping(_ groupId: String, _ error: Error?) -> Void) {
+        let userData: [String: Any] = ["name": name,
+                                       "description": description,
+                                       "avatar": avatar,
+                                       "users": users,
+                                       "isGroup": isGroup]
+        
+        databaseRef.child("groups").childByAutoId().setValue(userData) {
+            (error:Error?, ref:DatabaseReference) in
+            if let error = error {
+                onCompletion("", error)
+            } else {
+                onCompletion(ref.key ?? "", nil)
             }
         }
     }
@@ -414,6 +520,7 @@ public final class FirebaseData {
                             if let idsArr = userIds as? [String] {
                                 if (idsArr.contains(currentUser.uid)) {
                                     let groupName = usersDict["name"] as? String
+                                    let isGroup = usersDict["isGroup"] as? Bool
                                     let groupDescription = usersDict["description"] as? String
                                     let avatarName = usersDict["avatar"] as? String
                                     
@@ -424,7 +531,7 @@ public final class FirebaseData {
                                         timeStamp = stressedUserInfo["timeStamp"] as? Int64 ?? 0
                                     }
                                     
-                                    let groupData = Group(id: groupId, name: groupName, description: groupDescription, avatar: avatarName, stressedUser: stressedUser, timeStamp: timeStamp, users: idsArr)
+                                    let groupData = Group(id: groupId, isGroup: isGroup, name: groupName, description: groupDescription, avatar: avatarName, stressedUser: stressedUser, timeStamp: timeStamp, users: idsArr)
                                     groups.append(groupData)
                                 }
                             }
@@ -433,6 +540,34 @@ public final class FirebaseData {
                 }
             }
             onCompletion(groups)
+        }
+    }
+    
+    // MARK: - Check For Private Chats
+    func checkForPrivateChats(uid: String, onCompletion: @escaping(_ exists: Bool) -> Void) {
+        guard let currentUser = Auth.auth().currentUser else {
+            return
+        }
+        
+        self.databaseRef.child("groups").observeSingleEvent(of: .value) { (snapshot) in
+            if let groupsDict = snapshot.value as? NSDictionary {
+                for (key, valueDict) in groupsDict {
+                    if let usersDict = valueDict as? NSDictionary, let groupId = key as? String {
+                        for (_, userIds) in usersDict {
+                            if let idsArr = userIds as? [String] {
+                                if (idsArr.contains(uid) && idsArr.contains(currentUser.uid)) {
+                                    let isGroup = usersDict["isGroup"] as? Bool
+                                    
+                                    if let groupOrNot = isGroup, groupOrNot == false {
+                                        onCompletion(true)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            onCompletion(false)
         }
     }
     
@@ -450,6 +585,7 @@ public final class FirebaseData {
         self.databaseRef.child("groups").child(groupId).observeSingleEvent(of: .value) { (snapshot) in
             if let groupDict = snapshot.value as? NSDictionary {
                 let groupName = groupDict["name"] as? String
+                let isGroup = groupDict["isGroup"] as? Bool
                 let groupDescription = groupDict["description"] as? String
                 let avatarName = groupDict["avatar"] as? String
                 let idsArr = groupDict["users"] as? [String]
@@ -461,7 +597,7 @@ public final class FirebaseData {
                     timeStamp = stressedUserInfo["timeStamp"] as? Int64 ?? 0
                 }
                 
-                let groupData = Group(id: groupId, name: groupName, description: groupDescription, avatar: avatarName, stressedUser: stressedUser, timeStamp: timeStamp, users: idsArr)
+                let groupData = Group(id: groupId, isGroup: isGroup, name: groupName, description: groupDescription, avatar: avatarName, stressedUser: stressedUser, timeStamp: timeStamp, users: idsArr)
                 onCompletion(groupData)
             }
         }

@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0al-mG-x5f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0al-mG-x5f">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main Tab BarVC-->
         <scene sceneID="pzf-dM-iau">
             <objects>
-                <tabBarController storyboardIdentifier="homeTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0al-mG-x5f" customClass="MainTabBarVC" customModule="Fun_Stress" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="homeTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0al-mG-x5f" customClass="MainTabBarVC" customModule="Tusic" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lz0-Re-sNC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.42352941176470588" green="0.42352941176470588" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="4nC-Cj-Iva" kind="relationship" relationship="viewControllers" id="PeZ-IO-3zG"/>
@@ -30,7 +31,9 @@
         <scene sceneID="6Vq-Ri-X7j">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="groupsStoryId" storyboardName="Groups" id="BPs-SO-gwy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Groups" image="groupsUnselected" selectedImage="groupsSelected" id="XK1-A5-HBi"/>
+                    <tabBarItem key="tabBarItem" title="" image="unselectedChatsIcon" selectedImage="selectedChatsIcon" id="XK1-A5-HBi">
+                        <color key="badgeColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ds-sV-KZo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,7 +43,9 @@
         <scene sceneID="Fs8-ft-48R">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="4nC-Cj-Iva" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="music.house.fill" catalog="system" id="wOa-E8-9Xl"/>
+                    <tabBarItem key="tabBarItem" title="" image="unselectedHomeIcon" selectedImage="selectedHomeIcon" id="wOa-E8-9Xl">
+                        <color key="badgeColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OhY-HR-J6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +55,9 @@
         <scene sceneID="rrh-Cf-gZt">
             <objects>
                 <viewControllerPlaceholder storyboardName="MyProfile" id="SK5-pY-idg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profileUnselected" selectedImage="profileSelected" id="o6L-EE-qc2"/>
+                    <tabBarItem key="tabBarItem" title="" image="unselectedProfileIcon" selectedImage="selectedProfileIcon" id="o6L-EE-qc2">
+                        <color key="badgeColor" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCH-xz-E7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,10 +65,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="groupsSelected" width="25" height="25"/>
-        <image name="groupsUnselected" width="25" height="25"/>
-        <image name="music.house.fill" catalog="system" width="128" height="106"/>
-        <image name="profileSelected" width="25" height="25"/>
-        <image name="profileUnselected" width="25" height="25"/>
+        <image name="selectedChatsIcon" width="30" height="30"/>
+        <image name="selectedHomeIcon" width="30" height="30"/>
+        <image name="selectedProfileIcon" width="30" height="30"/>
+        <image name="unselectedChatsIcon" width="30" height="30"/>
+        <image name="unselectedHomeIcon" width="30" height="30"/>
+        <image name="unselectedProfileIcon" width="30" height="30"/>
     </resources>
 </document>

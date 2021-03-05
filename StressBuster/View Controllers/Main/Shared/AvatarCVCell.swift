@@ -22,7 +22,7 @@ class AvatarCVCell: UICollectionViewCell {
             if newValue {
                 super.isSelected = true
                 self.layer.cornerRadius = 10.0
-                self.backgroundColor = #colorLiteral(red: 0.6039215686, green: 0.6039215686, blue: 0.6039215686, alpha: 0.5)
+                self.backgroundColor = #colorLiteral(red: 0.9150560498, green: 0.9150775075, blue: 0.9150659442, alpha: 1)
             } else if newValue == false {
                 super.isSelected = false
                 self.layer.cornerRadius = 0.0
