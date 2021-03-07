@@ -24,7 +24,11 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func contactDetailsBtnPressed(_ sender: UIButton) {
-        self.contactBtn.setTitle("stressapp123@gmail.com", for: .normal)
+        if (sender.titleLabel?.text == "Contact Us") {
+            self.contactBtn.setTitle("stressapp123@gmail.com", for: .normal)
+        } else {
+            self.contactBtn.setTitle("Contact Us", for: .normal)
+        }
     }
     
     @IBAction func rateAppBarBtnPressed(_ sender: UIBarButtonItem) {

@@ -32,6 +32,12 @@ exports.sendStressNotificationToGroup = functions.database
       .database()
       .ref(`/groups/${groupUid}/name`)
       .once("value");
+    
+    // Check if Group or Private Chat
+    const isGroupPromise = admin
+      .database()
+      .ref(`/groups/${groupUid}/isGroup`)
+      .once("value");
 
     // The snapshot to the user's tokens.
     let tokensSnapshot;
@@ -54,7 +60,10 @@ exports.sendStressNotificationToGroup = functions.database
     console.log(tokensSnapshot.val());
 
     // Notification details.
-    const payload = {
+    let payload;
+
+    if (isGroupPromise) {
+      payload = {
       notification: {
         title: `${stressedUserName} is Stressed!`,
         body: `Open ${groupName} to send music.`,
@@ -62,6 +71,16 @@ exports.sendStressNotificationToGroup = functions.database
         sound: "frustration.caf",
       },
     };
+    } else {
+      payload = {
+      notification: {
+        title: `${stressedUserName} is Stressed!`,
+        body: `Open Tusic app to send the music.`,
+        icon: `https://is3-ssl.mzstatic.com/image/thumb/Music113/v4/88/48/8f/88488f62-ac34-a109-569c-6cda49352855/source/100x100bb.jpg`,
+        sound: "frustration.caf",
+      },
+    };
+    }
 
     // Listing all tokens as an array.
     tokens = tokensSnapshot.val();

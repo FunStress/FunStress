@@ -66,28 +66,28 @@
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heroImage_2" translatesAutoresizingMaskIntoConstraints="NO" id="rN5-vc-1Jv">
-                                                <rect key="frame" x="-10" y="687.5" width="434" height="430"/>
+                                                <rect key="frame" x="-10" y="684.5" width="434" height="430"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="430" id="8eQ-8S-hqG"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heroImage_3" translatesAutoresizingMaskIntoConstraints="NO" id="D8w-tP-IxL">
-                                                <rect key="frame" x="-20" y="1291.5" width="454" height="430"/>
+                                                <rect key="frame" x="-20" y="1266.5" width="454" height="430"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="430" id="ayk-Za-7PX"/>
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p7k-yE-1qj">
-                                                <rect key="frame" x="20" y="1127.5" width="374" height="114"/>
+                                                <rect key="frame" x="20" y="1124.5" width="374" height="92"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to Get Started" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-6d-mb3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="25"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm7-gZ-7Bt">
-                                                        <rect key="frame" x="0.0" y="40.5" width="374" height="73.5"/>
+                                                        <rect key="frame" x="0.0" y="39.5" width="374" height="52.5"/>
                                                         <string key="text">It’s simple. Tell your friends to download the app. Create individual or group chats. Search and send music related to the text you want to convey.</string>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
                                                         <nil key="textColor"/>
@@ -96,16 +96,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LKB-Ff-D48">
-                                                <rect key="frame" x="20" y="1741.5" width="374" height="77.5"/>
+                                                <rect key="frame" x="20" y="1716.5" width="374" height="74.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Additional Feature" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cat-As-9Ud">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="25"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Feeling stressed about something? Notify your friends using the “Purple Bell” icon." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b99-Ac-p6m">
-                                                        <rect key="frame" x="0.0" y="40.5" width="374" height="37"/>
+                                                        <rect key="frame" x="0.0" y="39.5" width="374" height="35"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -113,16 +113,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hlV-Il-TYR">
-                                                <rect key="frame" x="20" y="480" width="374" height="77.5"/>
+                                                <rect key="frame" x="20" y="480" width="374" height="74.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Let’s Text with Music" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCr-HH-3fb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="25"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Tired of texting with words? Wanna change the way you text?? Use Music and get with music." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEj-SE-fne">
-                                                        <rect key="frame" x="0.0" y="40.5" width="374" height="37"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Tired of texting with words? Wanna change the way you text?? Use Tusic and text with music." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEj-SE-fne">
+                                                        <rect key="frame" x="0.0" y="39.5" width="374" height="35"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -130,7 +130,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRm-Ca-peX" customClass="DesignableButton" customModule="Tusic" customModuleProvider="target">
-                                                <rect key="frame" x="107" y="587.5" width="200" height="50"/>
+                                                <rect key="frame" x="107" y="584.5" width="200" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="ZHK-0Z-ubr"/>
@@ -150,13 +150,13 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lrj-TW-NTF" customClass="DesignableView" customModule="Tusic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="1849" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="1821" width="414" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="Orh-Ei-XSK">
-                                                        <rect key="frame" x="20" y="10" width="374" height="30"/>
+                                                        <rect key="frame" x="20" y="11" width="374" height="29"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T96-mE-Z1N">
-                                                                <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="119" height="29"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                                                 <state key="normal" title="Contact Us"/>
                                                                 <connections>
@@ -164,7 +164,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESE-Hz-YnO">
-                                                                <rect key="frame" x="159" y="0.0" width="215" height="30"/>
+                                                                <rect key="frame" x="157" y="0.0" width="217" height="29"/>
                                                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                                                 <state key="normal" title="Security &amp; Privacy"/>
                                                                 <connections>
@@ -271,7 +271,7 @@
     </scenes>
     <designables>
         <designable name="kRm-Ca-peX">
-            <size key="intrinsicContentSize" width="43" height="33"/>
+            <size key="intrinsicContentSize" width="37" height="32"/>
         </designable>
     </designables>
     <resources>
